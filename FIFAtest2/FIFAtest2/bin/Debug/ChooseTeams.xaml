@@ -55,7 +55,7 @@
             	<Image Margin="274.201,237.591,301.799,261.409" Source="star.png" Stretch="Fill"/>
             	<Image Margin="225.201,238.636,351.799,261.364" Source="star.png" Stretch="Fill"/>
             	<Image Margin="176.201,238.636,400.799,261.364" Source="star.png" Stretch="Fill"/>
-            	<TextBlock Margin="-1.647,12.633,8.646,0" TextWrapping="Wrap" Text="Leeds United" Height="51" Width="618.132" Style="{StaticResource HeaderTextStyle}" TextAlignment="Center" VerticalAlignment="Top" FontSize="40" Foreground="#DEFFFFFF"/>
+            	<TextBlock x:Name="ClubName" Margin="-1.647,12.633,8.646,0" TextWrapping="Wrap" Text="" Height="51" Width="618.132" Style="{StaticResource HeaderTextStyle}" TextAlignment="Center" VerticalAlignment="Top" FontSize="40" Foreground="#DEFFFFFF"/>
             	<Image Margin="206.557,76.636,228.443,307.364" Source="leeds.png" Stretch="Fill"/>
             	<Grid HorizontalAlignment="Left" Height="44.142" Margin="193.555,323.762,0,0" VerticalAlignment="Top" Width="218.994" Background="#FF5D5D5D"/>
             	<Rectangle HorizontalAlignment="Left" Height="69" Margin="200.556,312.834,0,0" VerticalAlignment="Top" Width="55.644" Fill="#FFE6E6E6" Stroke="Black"/>
@@ -64,15 +64,15 @@
             	<TextBlock HorizontalAlignment="Left" Margin="206.557,318.334,0,0" TextWrapping="Wrap" Text="DEF" VerticalAlignment="Top" FontSize="24" Height="24" RenderTransformOrigin="0.488000005483627,0.375" FontWeight="Bold" Foreground="Black"/>
             	<TextBlock HorizontalAlignment="Left" Margin="279.201,318.334,0,0" TextWrapping="Wrap" Text="MID" VerticalAlignment="Top" FontSize="24" Height="24" RenderTransformOrigin="0.488000005483627,0.375" FontWeight="Bold" Foreground="Black"/>
             	<TextBlock HorizontalAlignment="Left" Margin="358.557,318.334,0,0" TextWrapping="Wrap" Text="ATT" VerticalAlignment="Top" FontSize="24" Height="24" RenderTransformOrigin="0.488000005483627,0.375" FontWeight="Bold" Foreground="Black"/>
-            	<TextBlock x:Name="Def" HorizontalAlignment="Left" Margin="206.557,347.334,0,0" TextWrapping="Wrap" Text="67" VerticalAlignment="Top" Height="29" FontSize="24" Width="41" TextAlignment="Center" Foreground="Black"/>
-            	<TextBlock x:Name="Mid" HorizontalAlignment="Left" Margin="279.201,347.334,0,0" TextWrapping="Wrap" Text="69" VerticalAlignment="Top" Height="29" FontSize="24" Width="45" TextAlignment="Center" Foreground="Black"/>
-            	<TextBlock x:Name="Att" HorizontalAlignment="Left" Margin="358.557,347.334,0,0" TextWrapping="Wrap" Text="70" VerticalAlignment="Top" Height="29" FontSize="24" Width="39" TextAlignment="Center" Foreground="Black"/>
+            	<TextBlock x:Name="Def" HorizontalAlignment="Left" Margin="206.557,347.334,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="29" FontSize="24" Width="41" TextAlignment="Center" Foreground="Black"/>
+            	<TextBlock x:Name="Mid" HorizontalAlignment="Left" Margin="279.201,347.334,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="29" FontSize="24" Width="45" TextAlignment="Center" Foreground="Black"/>
+            	<TextBlock x:Name="Att" HorizontalAlignment="Left" Margin="358.557,347.334,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="29" FontSize="24" Width="39" TextAlignment="Center" Foreground="Black"/>
             	<ComboBox x:ConnectionId='3' x:Name="LeagueList" HorizontalAlignment="Left" Margin="193.555,402,0,0" VerticalAlignment="Top" Width="219.001" SelectedIndex="-1"                                      />
-                <ComboBox x:Name="ClubList" HorizontalAlignment="Left" Margin="193.555,453,0,0" VerticalAlignment="Top" Width="219.001"/>
+                <ComboBox x:ConnectionId='4' x:Name="ClubList" HorizontalAlignment="Left" Margin="193.555,453,0,0" VerticalAlignment="Top" Width="219.001"                                    />
             </Grid>
         </Grid>
         <Button x:ConnectionId='1' Content="Generate Fixtures" HorizontalAlignment="Left" Margin="392,563.783,0,0" Grid.Row="1" VerticalAlignment="Top"                         />
-        <Grid HorizontalAlignment="Left" Height="43.857" Margin="127.493,29.991,0,0" Grid.Row="1" VerticalAlignment="Top" Width="624.544">
+        <Grid HorizontalAlignment="Left" Height="43.857" Margin="127.493,29.991,0,0" Grid.Row="1" VerticalAlignment="Top" Width="625.75">
         	<Grid.Background>
         		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
         			<GradientStop Color="#FF7A7A7A"/>

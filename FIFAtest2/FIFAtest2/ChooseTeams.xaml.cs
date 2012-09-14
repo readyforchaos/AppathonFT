@@ -30,6 +30,9 @@ namespace FIFAtest2
             
             this.InitializeComponent();
             GenerateLists();
+            count = 0;
+            PlayerName.Text = "Select team, " + App.Instance.Players[0].Name + ":";
+            //PlayerName.Text = App.Instance.Players[0].Name;
         }
 
         /// <summary>
@@ -67,7 +70,9 @@ namespace FIFAtest2
 
         private void GenerateFixtures(object sender, RoutedEventArgs e)
         {
+            //IndexArrayOutOfBoundsException if no league and/or club is selected, FIX
             App.Instance.Players[count].Club = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex];
+            PlayerName.Text = "Select team, " + App.Instance.Players[count].Name + ":";
             count++;
             LeagueList.SelectedIndex = -1;
             ClubList.SelectedIndex = -1;
@@ -90,6 +95,18 @@ namespace FIFAtest2
                   ClubList.Items.Add(temp);
                 }
             }
+        }
+
+        private void ClubListSelected(object sender, SelectionChangedEventArgs e)
+        {
+            if (ClubList.SelectedIndex >= 0)
+            {
+                ClubName.Text = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].name;
+                Def.Text = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].def.ToString();
+                Mid.Text = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].mid.ToString();
+                Att.Text = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].att.ToString();
+            }
+
         }
 
 
