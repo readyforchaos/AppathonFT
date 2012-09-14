@@ -43,7 +43,7 @@
             	<Run Text="Step 2"/>
             	<Run Text=" | Select teams"/>
             </TextBlock>
-            <Grid HorizontalAlignment="Left" Height="541" Margin="7.494,161.492,0,-562.492" VerticalAlignment="Top" Width="625.758" Grid.Column="1">
+            <Grid HorizontalAlignment="Left" Height="541" Margin="7.494,210.061,0,-611.061" VerticalAlignment="Top" Width="625.758" Grid.Column="1">
             	<Grid.Background>
             		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             			<GradientStop Color="#FF272727"/>
@@ -71,7 +71,16 @@
                 <ComboBox x:Name="ClubList" HorizontalAlignment="Left" Margin="193.555,453,0,0" VerticalAlignment="Top" Width="219.001"/>
             </Grid>
         </Grid>
-        <Button Content="Generate Fixtures" HorizontalAlignment="Left" Margin="392,514,0,0" Grid.Row="1" VerticalAlignment="Top" Click="GenerateFixtures"/>
+        <Button Content="Generate Fixtures" HorizontalAlignment="Left" Margin="392,563.783,0,0" Grid.Row="1" VerticalAlignment="Top" Click="GenerateFixtures"/>
+        <Grid HorizontalAlignment="Left" Height="43.857" Margin="127.493,29.991,0,0" Grid.Row="1" VerticalAlignment="Top" Width="624.544">
+        	<Grid.Background>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="#FF7A7A7A"/>
+        			<GradientStop Color="#FF262626" Offset="1"/>
+        		</LinearGradientBrush>
+        	</Grid.Background>
+        </Grid>
+        <TextBlock x:Name="PlayerName" HorizontalAlignment="Left" Margin="248.916,39.704,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource TitleTextStyle}" Height="36" Width="360" FontSize="26.667" TextAlignment="Center" FontFamily="Segoe UI" FontWeight="Normal" Foreground="#FFBBBBBB"/>
 
         <VisualStateManager.VisualStateGroups>
 
