@@ -32,6 +32,7 @@ namespace FIFAtest2
             GenerateLists();
             count = 0;
             PlayerName.Text = "Select team, " + App.Instance.Players[0].Name + ":";
+            //Fails to get the name of the Player
             //PlayerName.Text = App.Instance.Players[0].Name;
         }
 
