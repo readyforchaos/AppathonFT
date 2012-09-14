@@ -104,9 +104,30 @@ namespace FIFAtest2
             if (ClubList.SelectedIndex >= 0)
             {
                 ClubName.Text = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].name;
-                Def.Text = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].def.ToString();
-                Mid.Text = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].mid.ToString();
-                Att.Text = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].att.ToString();
+                if (App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].def == 0)
+                {
+                    Def.Text = "?";
+                }
+                else
+                {
+                    Def.Text = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].def.ToString();
+                }
+                if (App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].mid == 0)
+                {
+                    Mid.Text = "?";
+                }
+                else
+                {
+                    Mid.Text = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].mid.ToString();
+                }
+                if (App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].att == 0)
+                {
+                    Att.Text = "?";
+                }
+                else
+                {
+                    Att.Text = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].att.ToString();
+                }
                 BitmapImage bi = new BitmapImage();
                 bi.UriSource = new Uri(App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].logo);
                 ClubImage.Source = bi;

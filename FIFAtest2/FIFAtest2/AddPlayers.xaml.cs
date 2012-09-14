@@ -56,6 +56,7 @@ namespace FIFAtest2
             playerCount++;
             TextBox tempBox = new TextBox();
             TextBlock tempBlock = new TextBlock();
+            
 
         }
 
