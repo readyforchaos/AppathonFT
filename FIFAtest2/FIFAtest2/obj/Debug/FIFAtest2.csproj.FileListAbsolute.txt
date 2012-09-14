@@ -1,0 +1,85 @@
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\bin\Debug\FIFAtest2.exe
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\bin\Debug\FIFAtest2.pdb
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\bin\Debug\resources.pri
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\bin\Debug\AppxManifest.xml
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\bin\Debug\FIFAtest2.build.appxrecipe
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\App.g.i.cs
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\App.g.cs
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\Common\StandardStyles.g.i.cs
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\Common\StandardStyles.g.cs
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\MainPage.g.i.cs
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\MainPage.g.cs
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\XamlTypeInfo.g.cs
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\App.xaml
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\Common\StandardStyles.xaml
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\MainPage.xaml
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\FIFAtest2.exe
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\FIFAtest2.pdb
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\priconfig.xml
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\layout.resfiles
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\resources.resfiles
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\pri.resfiles
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\LanguageQualifiers.txt
+c:\users\andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\ProjectArchitectures.txt
+C:\Users\Andy\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\priconfig.xml.intermediate
+C:\Users\Andy\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\layout.resfiles.intermediate
+C:\Users\Andy\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\resources.resfiles.intermediate
+C:\Users\Andy\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\pri.resfiles.intermediate
+C:\Users\Andy\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\AddPlayers.g.i.cs
+C:\Users\Andy\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\AddPlayers.g.cs
+C:\Users\Andy\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\AddPlayers.xaml
+C:\Users\Andy\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\bin\Debug\Assets\wallpaper-1220195.png
+C:\Users\Andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\ChooseTeams.g.i.cs
+C:\Users\Andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\ChooseTeams.g.cs
+C:\Users\Andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\ChooseTeams.xaml
+C:\Users\Andy\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\bin\Debug\leeds.png
+C:\Users\Andy\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\bin\Debug\star.png
+C:\Users\Andy\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\bin\Debug\starEmpty.png
+C:\Users\Andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\Dashboard.g.i.cs
+C:\Users\Andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\Dashboard.g.cs
+C:\Users\Andy\documents\visual studio 2012\Projects\FIFAtest2\FIFAtest2\obj\Debug\Dashboard.xaml
+C:\Users\Andy\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\bin\Debug\messi.jpg
+C:\Users\Andy\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\bin\Debug\rrr.jpg
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\Assets\wallpaper-1220195.png
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\leeds.png
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\FIFAtest2.exe
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\FIFAtest2.pdb
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\resources.pri
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\AppxManifest.xml
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\FIFAtest2.build.appxrecipe
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\App.g.i.cs
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\App.g.cs
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\AddPlayers.g.i.cs
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\AddPlayers.g.cs
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\Dashboard.g.i.cs
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\Dashboard.g.cs
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\ChooseTeams.g.i.cs
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\ChooseTeams.g.cs
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\Common\StandardStyles.g.cs
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\MainPage.g.i.cs
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\MainPage.g.cs
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\App.xaml
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\AddPlayers.xaml
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\Dashboard.xaml
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\ChooseTeams.xaml
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\Common\StandardStyles.xaml
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\MainPage.xaml
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\FIFAtest2.exe
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\FIFAtest2.pdb
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\priconfig.xml
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\layout.resfiles
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\resources.resfiles
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\pri.resfiles
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\LanguageQualifiers.txt
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\ProjectArchitectures.txt
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\rrr.jpg
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\star.png
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\starEmpty.png
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\check_final.png
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\priconfig.xml.intermediate
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\layout.resfiles.intermediate
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\resources.resfiles.intermediate
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\pri.resfiles.intermediate
+C:\Users\Andy\Dropbox\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\xbox-live-logo.png

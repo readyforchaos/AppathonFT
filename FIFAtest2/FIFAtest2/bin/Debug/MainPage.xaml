@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="FIFAtest2.MainPage"
+    IsTabStop="false"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FIFAtest2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+
+        <Image Source="Assets/wallpaper-1220195.png" Stretch="Fill"/>
+
+        <Button x:ConnectionId='1' Content="Press to get started" HorizontalAlignment="Left" Margin="244.43,482.108,0,0" VerticalAlignment="Top"                        FontStyle="Italic" Height="42.25" Width="226.25"/>
+        <TextBlock x:Name="txtTitle" HorizontalAlignment="Left" Margin="174.43,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" FontStyle="Italic" Foreground="{StaticResource ToolTipForegroundThemeBrush}" Text="FIFA Tournament +"/>
+        <Grid x:Name="networkGrid" HorizontalAlignment="Left" Height="52.213" Margin="244.43,387.337,0,0" VerticalAlignment="Top" Width="226">
+        	<TextBlock HorizontalAlignment="Left" Margin="10,21,0,0" TextWrapping="Wrap" Text="Network connection confirmed" VerticalAlignment="Top" Height="16" Width="159" Foreground="Black"/>
+        	<Image Margin="187,10,10,15" Source="check_final.png" Stretch="Fill"/>
+        </Grid>
+
+    </Grid>
+</Page>
+
