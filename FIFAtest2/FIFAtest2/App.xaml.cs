@@ -41,6 +41,8 @@ namespace FIFAtest2
             this.InitializeComponent();
             this.Suspending += OnSuspending;
             Players = new List<Player>();
+            Players.Add(new Player("anders"));
+            Players.Add(new Player("SindreKING"));
             GenerateLeague();
         }
 

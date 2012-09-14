@@ -22,11 +22,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\aa206\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\bin\x86\Debug\FIFAtest2.exe">
       <PackagePath>FIFAtest2.exe</PackagePath>
-      <Modified>2012-09-14T20:13:50.101</Modified>
+      <Modified>2012-09-14T20:23:47.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aa206\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\bin\x86\Debug\FIFAtest2.pdb">
       <PackagePath>FIFAtest2.pdb</PackagePath>
-      <Modified>2012-09-14T20:13:50.091</Modified>
+      <Modified>2012-09-14T20:23:47.681</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aa206\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>

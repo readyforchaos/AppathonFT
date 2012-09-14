@@ -23,6 +23,7 @@ namespace FIFAtest2
     /// </summary>
     public sealed partial class BasicPage2 : FIFAtest2.Common.LayoutAwarePage
     {
+        int count;
 
         public BasicPage2()
         {
@@ -66,7 +67,15 @@ namespace FIFAtest2
 
         private void GenerateFixtures(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(BasicPage3), null);
+            App.Instance.Players[count].Club = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex];
+            count++;
+            LeagueList.SelectedIndex = -1;
+            ClubList.SelectedIndex = -1;
+
+            if ((count) == App.Instance.Players.Count())
+            {
+                this.Frame.Navigate(typeof(BasicPage3), null);
+            }
         }
 
         private void LeagueListSelected(object sender, SelectionChangedEventArgs e)
