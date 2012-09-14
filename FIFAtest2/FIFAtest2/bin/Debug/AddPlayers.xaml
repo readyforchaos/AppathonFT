@@ -73,7 +73,7 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button x:ConnectionId='2' x:Name="backButton"                IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
+            <Button x:ConnectionId='3' x:Name="backButton"                IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
             <TextBlock x:Name="pageTitle" Grid.Column="1" Text="Step 1" Style="{StaticResource PageHeaderTextStyle}"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="608" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="1346">
@@ -98,7 +98,7 @@
                     <Grid HorizontalAlignment="Left" Height="54" Margin="54,10,0,0" VerticalAlignment="Top" Width="550" Grid.Column="1">
                         <TextBox HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="34" />
                         <Button Content="x" HorizontalAlignment="Left" Margin="362,10,0,0" VerticalAlignment="Top" Width="43.643"/>
-                        <Button Content="Add player" HorizontalAlignment="Left" Margin="257,10,0,0" VerticalAlignment="Top" Width="105" />
+                        <Button x:ConnectionId='2' Content="Add player" HorizontalAlignment="Left" Margin="257,10,0,0" VerticalAlignment="Top" Width="105"             />
                     </Grid>
                     <Grid HorizontalAlignment="Left" Height="54" Margin="10,10,0,0" VerticalAlignment="Top" Width="180" Grid.ColumnSpan="2">
                         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Height="34" Width="160" FontSize="20" Foreground="White">
@@ -111,7 +111,7 @@
             </Grid>
 
         </Grid>
-    	<Button x:ConnectionId='1' Content="Continue" HorizontalAlignment="Left" Margin="585.747,238.112,0,0" VerticalAlignment="Top" Height="40.428" Width="147.643" Grid.Row="1"                       />
+    	<Button x:ConnectionId='1' Content="Continue" HorizontalAlignment="Left" Margin="585.747,238.112,0,0" VerticalAlignment="Top" Height="40.428" Width="147.643" Grid.Row="1"                 />
 
 
         <VisualStateManager.VisualStateGroups>

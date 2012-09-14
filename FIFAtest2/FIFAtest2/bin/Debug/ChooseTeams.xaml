@@ -43,7 +43,7 @@
             	<Run Text="Step 2"/>
             	<Run Text=" | Select teams"/>
             </TextBlock>
-            <Grid HorizontalAlignment="Left" Height="541" Margin="7.494,161.492,0,-562.492" VerticalAlignment="Top" Width="625.758" Grid.Column="1">
+            <Grid HorizontalAlignment="Left" Height="541" Margin="7.494,210.061,0,-611.061" VerticalAlignment="Top" Width="625.758" Grid.Column="1">
             	<Grid.Background>
             		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             			<GradientStop Color="#FF272727"/>
@@ -64,18 +64,23 @@
             	<TextBlock HorizontalAlignment="Left" Margin="206.557,318.334,0,0" TextWrapping="Wrap" Text="DEF" VerticalAlignment="Top" FontSize="24" Height="24" RenderTransformOrigin="0.488000005483627,0.375" FontWeight="Bold" Foreground="Black"/>
             	<TextBlock HorizontalAlignment="Left" Margin="279.201,318.334,0,0" TextWrapping="Wrap" Text="MID" VerticalAlignment="Top" FontSize="24" Height="24" RenderTransformOrigin="0.488000005483627,0.375" FontWeight="Bold" Foreground="Black"/>
             	<TextBlock HorizontalAlignment="Left" Margin="358.557,318.334,0,0" TextWrapping="Wrap" Text="ATT" VerticalAlignment="Top" FontSize="24" Height="24" RenderTransformOrigin="0.488000005483627,0.375" FontWeight="Bold" Foreground="Black"/>
-            	<TextBlock HorizontalAlignment="Left" Margin="206.557,347.334,0,0" TextWrapping="Wrap" Text="67" VerticalAlignment="Top" Height="29" FontSize="24" Width="41" TextAlignment="Center" Foreground="Black"/>
-            	<TextBlock HorizontalAlignment="Left" Margin="279.201,347.334,0,0" TextWrapping="Wrap" Text="69" VerticalAlignment="Top" Height="29" FontSize="24" Width="45" TextAlignment="Center" Foreground="Black"/>
-            	<TextBlock HorizontalAlignment="Left" Margin="358.557,347.334,0,0" TextWrapping="Wrap" Text="70" VerticalAlignment="Top" Height="29" FontSize="24" Width="39" TextAlignment="Center" Foreground="Black"/>
-            	<ComboBox HorizontalAlignment="Left" Margin="193.555,402,0,0" VerticalAlignment="Top" Width="219.001" SelectedIndex="-1">
-            		<ComboBoxItem Content="Premier League" IsSelected="True"/>
-            	</ComboBox>
-            	<ComboBox HorizontalAlignment="Left" Margin="193.555,453,0,0" VerticalAlignment="Top" Width="219.001">
-            		<ComboBoxItem Content="Leeds United" IsSelected="True"/>
-            	</ComboBox>
+            	<TextBlock x:Name="Def" HorizontalAlignment="Left" Margin="206.557,347.334,0,0" TextWrapping="Wrap" Text="67" VerticalAlignment="Top" Height="29" FontSize="24" Width="41" TextAlignment="Center" Foreground="Black"/>
+            	<TextBlock x:Name="Mid" HorizontalAlignment="Left" Margin="279.201,347.334,0,0" TextWrapping="Wrap" Text="69" VerticalAlignment="Top" Height="29" FontSize="24" Width="45" TextAlignment="Center" Foreground="Black"/>
+            	<TextBlock x:Name="Att" HorizontalAlignment="Left" Margin="358.557,347.334,0,0" TextWrapping="Wrap" Text="70" VerticalAlignment="Top" Height="29" FontSize="24" Width="39" TextAlignment="Center" Foreground="Black"/>
+            	<ComboBox x:ConnectionId='3' x:Name="LeagueList" HorizontalAlignment="Left" Margin="193.555,402,0,0" VerticalAlignment="Top" Width="219.001" SelectedIndex="-1"                                      />
+                <ComboBox x:Name="ClubList" HorizontalAlignment="Left" Margin="193.555,453,0,0" VerticalAlignment="Top" Width="219.001"/>
             </Grid>
         </Grid>
-        <Button x:ConnectionId='1' Content="Generate Fixtures" HorizontalAlignment="Left" Margin="392,514,0,0" Grid.Row="1" VerticalAlignment="Top"                       />
+        <Button x:ConnectionId='1' Content="Generate Fixtures" HorizontalAlignment="Left" Margin="392,563.783,0,0" Grid.Row="1" VerticalAlignment="Top"                         />
+        <Grid HorizontalAlignment="Left" Height="43.857" Margin="127.493,29.991,0,0" Grid.Row="1" VerticalAlignment="Top" Width="624.544">
+        	<Grid.Background>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="#FF7A7A7A"/>
+        			<GradientStop Color="#FF262626" Offset="1"/>
+        		</LinearGradientBrush>
+        	</Grid.Background>
+        </Grid>
+        <TextBlock x:Name="PlayerName" HorizontalAlignment="Left" Margin="248.916,39.704,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource TitleTextStyle}" Height="36" Width="360" FontSize="26.667" TextAlignment="Center" FontFamily="Segoe UI" FontWeight="Normal" Foreground="#FFBBBBBB"/>
 
         <VisualStateManager.VisualStateGroups>
 

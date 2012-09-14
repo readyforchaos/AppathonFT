@@ -41,7 +41,7 @@
 <!-- Back button and page title -->
 				<Image Margin="0,-0.013,1159.977,0" Source="rrr.jpg" Stretch="Fill"/>
 				<Image Margin="1169.165,-0.013,-602.126,0" Source="Assets/wallpaper-1220195.png" Stretch="Fill" HorizontalAlignment="Left" VerticalAlignment="Top" Height="1080.013" Width="1920.961"/>
-				<TextBlock HorizontalAlignment="Left" Margin="972,49,0,0" TextWrapping="Wrap" Text="Soon to support" VerticalAlignment="Top" Height="109" Width="378" FontSize="24" Foreground="Gray"/>
+				<TextBlock HorizontalAlignment="Left" Margin="954,49,0,0" TextWrapping="Wrap" Text="Soon to support" VerticalAlignment="Top" Height="109" Width="193" FontSize="24" Foreground="Gray"/>
 				<Image Margin="972,72,1954,922" Source="xbox-live-logo.png" Stretch="Fill"/>
 			</Grid>
 		</ScrollViewer>
