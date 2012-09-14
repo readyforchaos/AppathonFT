@@ -64,14 +64,13 @@ namespace FIFAtest2
             }
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void GenerateFixtures(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(BasicPage3), null);
         }
 
-        /*private void LeagueListSelected(object sender, PointerRoutedEventArgs e)
+        private void LeagueListSelected(object sender, SelectionChangedEventArgs e)
         {
-            //LeagueList.SelectedIndex;
             ClubList.Items.Clear();
             if(LeagueList.SelectedIndex >= 0)
             {
@@ -82,7 +81,8 @@ namespace FIFAtest2
                   ClubList.Items.Add(temp);
                 }
             }
-        }*/
+        }
+
 
     }
 }

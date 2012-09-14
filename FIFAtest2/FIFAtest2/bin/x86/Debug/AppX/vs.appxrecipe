@@ -22,11 +22,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\aa206\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\bin\x86\Debug\FIFAtest2.exe">
       <PackagePath>FIFAtest2.exe</PackagePath>
-      <Modified>2012-09-14T19:37:10.703</Modified>
+      <Modified>2012-09-14T20:13:50.101</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aa206\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\bin\x86\Debug\FIFAtest2.pdb">
       <PackagePath>FIFAtest2.pdb</PackagePath>
-      <Modified>2012-09-14T19:37:10.692</Modified>
+      <Modified>2012-09-14T20:13:50.091</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aa206\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
@@ -98,7 +98,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aa206\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\bin\x86\Debug\ChooseTeams.xaml">
       <PackagePath>ChooseTeams.xaml</PackagePath>
-      <Modified>2012-09-14T19:35:30.643</Modified>
+      <Modified>2012-09-14T20:13:39.741</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aa206\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\bin\x86\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>

@@ -67,11 +67,11 @@
             	<TextBlock x:Name="Def" HorizontalAlignment="Left" Margin="206.557,347.334,0,0" TextWrapping="Wrap" Text="67" VerticalAlignment="Top" Height="29" FontSize="24" Width="41" TextAlignment="Center" Foreground="Black"/>
             	<TextBlock x:Name="Mid" HorizontalAlignment="Left" Margin="279.201,347.334,0,0" TextWrapping="Wrap" Text="69" VerticalAlignment="Top" Height="29" FontSize="24" Width="45" TextAlignment="Center" Foreground="Black"/>
             	<TextBlock x:Name="Att" HorizontalAlignment="Left" Margin="358.557,347.334,0,0" TextWrapping="Wrap" Text="70" VerticalAlignment="Top" Height="29" FontSize="24" Width="39" TextAlignment="Center" Foreground="Black"/>
-            	<ComboBox x:ConnectionId='3' x:Name="LeagueList" HorizontalAlignment="Left" Margin="193.555,402,0,0" VerticalAlignment="Top" Width="219.001" SelectedIndex="-1"                                    />
+            	<ComboBox x:ConnectionId='3' x:Name="LeagueList" HorizontalAlignment="Left" Margin="193.555,402,0,0" VerticalAlignment="Top" Width="219.001" SelectedIndex="-1"                                      />
                 <ComboBox x:Name="ClubList" HorizontalAlignment="Left" Margin="193.555,453,0,0" VerticalAlignment="Top" Width="219.001"/>
             </Grid>
         </Grid>
-        <Button x:ConnectionId='1' Content="Generate Fixtures" HorizontalAlignment="Left" Margin="392,514,0,0" Grid.Row="1" VerticalAlignment="Top"                       />
+        <Button x:ConnectionId='1' Content="Generate Fixtures" HorizontalAlignment="Left" Margin="392,514,0,0" Grid.Row="1" VerticalAlignment="Top"                         />
 
         <VisualStateManager.VisualStateGroups>
 
