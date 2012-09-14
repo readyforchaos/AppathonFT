@@ -21,9 +21,11 @@ namespace FIFAtest2
     /// </summary>
     public sealed partial class BasicPage1 : FIFAtest2.Common.LayoutAwarePage
     {
+        int playerCount;
         public BasicPage1()
         {
             this.InitializeComponent();
+            playerCount = 2;
         }
 
         /// <summary>
@@ -51,6 +53,9 @@ namespace FIFAtest2
 
         private void Add(object sender, RoutedEventArgs e)
         {
+            playerCount++;
+            TextBox tempBox = new TextBox();
+            TextBlock tempBlock = new TextBlock();
 
         }
 

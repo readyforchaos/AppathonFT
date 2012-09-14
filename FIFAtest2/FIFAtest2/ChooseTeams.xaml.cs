@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 using Backend;
+using Windows.UI.Xaml.Media.Imaging;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
 
@@ -106,6 +107,9 @@ namespace FIFAtest2
                 Def.Text = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].def.ToString();
                 Mid.Text = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].mid.ToString();
                 Att.Text = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].att.ToString();
+                BitmapImage bi = new BitmapImage();
+                bi.UriSource = new Uri(App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].logo);
+                ClubImage.Source = bi;
             }
 
         }
