@@ -14,6 +14,8 @@ namespace Backend
         {
             club1 = player1.Club.name;
             club2 = player2.Club.name;
+            club1Goals = 0;
+            club2Goals = 0;
         }
 
         public void AddPointClub1()
@@ -41,6 +43,11 @@ namespace Backend
             {
                 club2Goals--;
             }
+        }
+
+        public String ToString()
+        {
+            return club1 + "\t" + club1Goals.ToString() + "\t -\t" + club2Goals.ToString() + "\t" + club2;
         }
     }
 }

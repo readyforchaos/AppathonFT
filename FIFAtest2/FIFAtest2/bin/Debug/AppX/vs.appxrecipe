@@ -22,11 +22,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\FIFAtest2.exe">
       <PackagePath>FIFAtest2.exe</PackagePath>
-      <Modified>2012-09-15T05:50:06.164</Modified>
+      <Modified>2012-09-15T07:08:40.310</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\FIFAtest2.pdb">
       <PackagePath>FIFAtest2.pdb</PackagePath>
-      <Modified>2012-09-15T05:50:06.154</Modified>
+      <Modified>2012-09-15T07:08:40.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\Assets\half_str.png">
       <PackagePath>Assets\half_str.png</PackagePath>
@@ -98,15 +98,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\AddPlayers.xaml">
       <PackagePath>AddPlayers.xaml</PackagePath>
-      <Modified>2012-09-14T23:27:55.421</Modified>
+      <Modified>2012-09-15T06:28:43.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\Dashboard.xaml">
       <PackagePath>Dashboard.xaml</PackagePath>
-      <Modified>2012-09-15T05:42:45.253</Modified>
+      <Modified>2012-09-15T06:00:53.004</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\ChooseTeams.xaml">
       <PackagePath>ChooseTeams.xaml</PackagePath>
-      <Modified>2012-09-15T05:50:02.144</Modified>
+      <Modified>2012-09-15T05:51:34.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>

@@ -43,8 +43,8 @@ namespace FIFAtest2
             Players = new List<Player>();
             Players.Add(new Player("anders"));
             Players.Add(new Player("SindreKING"));
-            Players.Add(new Player("MarkuScrub"));
-            Players.Add(new Player("LeftEye"));
+            //Players.Add(new Player("MarkuScrub"));
+            //Players.Add(new Player("LeftEye"));
             GenerateLeague();
         }
 

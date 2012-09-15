@@ -38,6 +38,7 @@ namespace Backend
                 if (player1 != player2)
                 {
                     Match temp = new Match(players[player1], players[player2]);
+                    Match temp2 = new Match(players[player2], players[player1]);
                     matchMade = true;
                     foreach (Match m in Matches)
                     {
@@ -50,7 +51,7 @@ namespace Backend
                             matchMade = false;
                         }*/
 
-                        if(m.Equals(temp))
+                        if(m.Equals(temp) || m.Equals(temp2))
                         {
                             matchMade = false;
                             break;

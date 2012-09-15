@@ -29,7 +29,9 @@ namespace FIFAtest2
         public BasicPage3()
         {
             bracket = new Bracket(App.Instance.Players);
+
             this.InitializeComponent();
+            GenerateMatchList();
         }
 
         /// <summary>
@@ -53,6 +55,21 @@ namespace FIFAtest2
         /// <param name="pageState">An empty dictionary to be populated with serializable state.</param>
         protected override void SaveState(Dictionary<String, Object> pageState)
         {
+        }
+
+        void GenerateMatchList()
+        {
+            /*for (int i = 0; i < bracket.Matches.Count(); i++)
+            {
+                ListViewItem temp = new ListViewItem();
+                
+            }*/
+            foreach (Match m in bracket.Matches)
+            {
+                ListViewItem temp = new ListViewItem();
+                temp.Content = m.ToString();
+                MatchList.Items.Add(temp);
+            }
         }
     }
 }

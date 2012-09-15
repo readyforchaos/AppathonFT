@@ -43,7 +43,7 @@
 				<Image Margin="1169.165,-0.013,-602.126,0" Source="Assets/wallpaper-1220195.png" Stretch="Fill" HorizontalAlignment="Left" VerticalAlignment="Top" Height="1080.013" Width="1920.961"/>
 				<TextBlock HorizontalAlignment="Left" Margin="954,49,0,0" TextWrapping="Wrap" Text="Soon to support" VerticalAlignment="Top" Height="109" Width="193" FontSize="24" Foreground="Gray"/>
 				<Image Margin="972,72,1954,922" Source="xbox-live-logo.png" Stretch="Fill"/>
-                <ListView x:Name="lstBracket" HorizontalAlignment="Left" Height="570" Margin="1234,155,0,0" VerticalAlignment="Top" Width="613" Background="#FF535353">
+                <ListView x:Name="MatchList" HorizontalAlignment="Left" Height="570" Margin="1234,155,0,0" VerticalAlignment="Top" Width="613" Background="#FF535353">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ListViewItem x:Name="lstGame"></ListViewItem>

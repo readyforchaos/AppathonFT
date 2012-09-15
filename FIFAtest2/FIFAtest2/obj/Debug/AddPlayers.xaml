@@ -63,7 +63,7 @@
     				<GradientStop Color="#FF232323" Offset="1"/>
     			</LinearGradientBrush>
     		</Grid.Background>
-    	</Grid>
+        </Grid>
         
         
 
@@ -73,7 +73,7 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button x:ConnectionId='2' x:Name="backButton"                IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
+            <Button x:ConnectionId='3' x:Name="backButton"                IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
             <TextBlock x:Name="pageTitle" Grid.Column="1" Text="Step 1" Style="{StaticResource PageHeaderTextStyle}"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="608" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="1346">
@@ -81,8 +81,19 @@
             
             <Grid HorizontalAlignment="Left" Height="69" Margin="114,10,0,0" VerticalAlignment="Top" Width="515">
                 <Grid HorizontalAlignment="Left" Height="255" Margin="10,10,-100,-196" VerticalAlignment="Top" Width="605">
-                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Add Players to Playable teams" VerticalAlignment="Top" Height="53" Width="501" FontSize="36" Foreground="White"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Assign players" VerticalAlignment="Top" Height="53" Width="501" FontSize="36" Foreground="White"/>
                     
+                    <Button x:ConnectionId='2' x:Name="AddPlayer" Content="Add Players" HorizontalAlignment="Left" Margin="329,222,0,-1" VerticalAlignment="Top"                        />
+                    <ListView x:Name="PlayerList" HorizontalAlignment="Left" Height="100" Margin="10,68,0,0" VerticalAlignment="Top" Width="441">
+                        
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding PlayerName, Mode=TwoWay}" Foreground="White" Width="215"></TextBox>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        
+                    </ListView>
+
 
                 </Grid>
             </Grid>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using Windows.Foundation;
@@ -12,6 +13,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+using Backend;
+
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
 
 namespace FIFAtest2
@@ -21,11 +24,15 @@ namespace FIFAtest2
     /// </summary>
     public sealed partial class BasicPage1 : FIFAtest2.Common.LayoutAwarePage
     {
-        int playerCount;
+
+        ObservableCollection<Player> players;
+
         public BasicPage1()
         {
             this.InitializeComponent();
-            playerCount = 2;
+            players = new ObservableCollection<Player>();
+
+            PlayerList.ItemsSource = players;
         }
 
         /// <summary>
@@ -51,18 +58,21 @@ namespace FIFAtest2
         {
         }
 
-        private void Add(object sender, RoutedEventArgs e)
-        {
-            playerCount++;
-            TextBox tempBox = new TextBox();
-            TextBlock tempBlock = new TextBlock();
-            
-
-        }
-
         private void Continue(object sender, RoutedEventArgs e)
         {
+            foreach (Player p in players)
+            {
+                if (p.Name != "")
+                {
+                    App.Instance.Players.Add(p);
+                }
+            }
             this.Frame.Navigate(typeof(BasicPage2), null);
+        }
+
+        private void AddPlayer_Click(object sender, RoutedEventArgs e)
+        {
+            players.Add(new Player());
         }
     }
 }

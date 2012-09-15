@@ -36,5 +36,9 @@ namespace Backend
         {
         }
 
+        public Player()
+        {
+        }
+
     }
 }
