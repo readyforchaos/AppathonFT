@@ -72,16 +72,23 @@ namespace FIFAtest2
 
         private void GenerateFixtures(object sender, RoutedEventArgs e)
         {
-            //IndexArrayOutOfBoundsException if no league and/or club is selected, FIX
-            App.Instance.Players[count].Club = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex];
-            PlayerName.Text = "Select team, " + App.Instance.Players[count].Name + ":";
-            count++;
-            LeagueList.SelectedIndex = -1;
-            ClubList.SelectedIndex = -1;
-
-            if ((count) == App.Instance.Players.Count())
+            if (ClubList.SelectedIndex > 0)
             {
-                this.Frame.Navigate(typeof(BasicPage3), null);
+                App.Instance.Players[count].Club = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex];
+                PlayerName.Text = "Select team, " + App.Instance.Players[count].Name + ":";
+                count++;
+                LeagueList.SelectedIndex = -1;
+                ClubList.SelectedIndex = -1;
+                ClubName.Text = "";
+                ClubImage.Source = null;
+                Def.Text = "";
+                Mid.Text = "";
+                Att.Text = "";
+
+                if ((count) == App.Instance.Players.Count())
+                {
+                    this.Frame.Navigate(typeof(BasicPage3), null);
+                }
             }
         }
 

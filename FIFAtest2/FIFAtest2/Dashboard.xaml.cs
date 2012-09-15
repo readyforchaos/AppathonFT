@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+using Backend;
+
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
 
 namespace FIFAtest2
@@ -21,8 +23,12 @@ namespace FIFAtest2
     /// </summary>
     public sealed partial class BasicPage3 : FIFAtest2.Common.LayoutAwarePage
     {
+
+        Bracket bracket;
+
         public BasicPage3()
         {
+            bracket = new Bracket(App.Instance.Players);
             this.InitializeComponent();
         }
 

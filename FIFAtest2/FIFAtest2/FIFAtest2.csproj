@@ -140,6 +140,7 @@
     <None Include="FIFAtest2_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\half_str.png" />
     <Content Include="Assets\Logo.png" />
     <Content Include="Assets\SmallLogo.png" />
     <Content Include="Assets\SplashScreen.png" />

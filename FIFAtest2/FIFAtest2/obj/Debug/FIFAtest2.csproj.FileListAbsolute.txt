@@ -161,3 +161,7 @@ C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\resourc
 C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\pri.resfiles
 C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\LanguageQualifiers.txt
 C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\ProjectArchitectures.txt
+C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\priconfig.xml.intermediate
+C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\layout.resfiles.intermediate
+C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\resources.resfiles.intermediate
+C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\obj\Debug\pri.resfiles.intermediate
