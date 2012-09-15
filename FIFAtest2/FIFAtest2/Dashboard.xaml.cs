@@ -71,5 +71,10 @@ namespace FIFAtest2
                 MatchList.Items.Add(temp);
             }
         }
+
+        private void btnStartMatch_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -47,7 +47,7 @@ namespace Backend
 
         public String ToString()
         {
-            return club1 + "\t" + club1Goals.ToString() + "\t -\t" + club2Goals.ToString() + "\t" + club2;
+            return "\t" + club1 + "\t" + club1Goals.ToString() + "\t -\t" + club2Goals.ToString() + "\t" + club2;
         }
     }
 }

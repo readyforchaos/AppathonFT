@@ -27,13 +27,13 @@ namespace Backend
 
             int matchMaking = 0;
             Boolean matchMade = false;
-            Random rng1 = new Random(players.Count);
+            Random rng = new Random();
             //Match temp = new Match(players[0], players[1]);
            // Matches.Add(temp);
             while (matchMaking < matchCount)
             {
-                int player1 = rng1.Next(players.Count);
-                int player2 = rng1.Next(players.Count);
+                int player1 = rng.Next(players.Count);
+                int player2 = rng.Next(players.Count);
 
                 if (player1 != player2)
                 {
@@ -51,7 +51,7 @@ namespace Backend
                             matchMade = false;
                         }*/
 
-                        if(m.Equals(temp) || m.Equals(temp2))
+                        if(m == temp || m == temp2)
                         {
                             matchMade = false;
                             break;
@@ -61,7 +61,6 @@ namespace Backend
                     {
                         Matches.Add(temp);
                         matchMaking++;
-                        matchMade = false;
                     }
 
                 }

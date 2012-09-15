@@ -43,13 +43,32 @@
 				<Image Margin="1169.165,-0.013,-602.126,0" Source="Assets/wallpaper-1220195.png" Stretch="Fill" HorizontalAlignment="Left" VerticalAlignment="Top" Height="1080.013" Width="1920.961"/>
 				<TextBlock HorizontalAlignment="Left" Margin="954,49,0,0" TextWrapping="Wrap" Text="Soon to support" VerticalAlignment="Top" Height="109" Width="193" FontSize="24" Foreground="Gray"/>
 				<Image Margin="972,72,1954,922" Source="xbox-live-logo.png" Stretch="Fill"/>
-                <ListView x:Name="MatchList" HorizontalAlignment="Left" Height="570" Margin="1234,155,0,0" VerticalAlignment="Top" Width="613" Background="#FF535353">
+
+                <Grid Margin="2066,155,273,355" Background="#FFE0E0E0">
+
+                    <ListView Margin="-6,84,1919,144" Background="#FF535353">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ListViewItem x:Name="ListPosition"></ListViewItem>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <!-- <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ListViewItem x:Name="PositionList"></ListViewItem>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>-->
+                    </ListView>
+                    <TextBlock HorizontalAlignment="Left" Margin="14,-45,-146,7" TextWrapping="Wrap" Text="Pos    Club       P    W    D    L    GF    GA    GD         PTS" VerticalAlignment="Top" Height="69" Width="841" Foreground="Black" Style="{StaticResource HeaderTextStyle}" FontSize="30"/>
+                </Grid>
+
+                <ListView x:Name="MatchList" HorizontalAlignment="Left" Height="570" Margin="1234,155,0,0" VerticalAlignment="Top" Width="613" Background="#FFE0E0E0">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <ListViewItem x:Name="lstGame"></ListViewItem>
+                            <ListViewItem x:Name="lstGame" Margin="0" HorizontalAlignment="Center"/>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+
                 <Grid HorizontalAlignment="Left" Height="136" Margin="954,224,0,0" VerticalAlignment="Top" Width="202">
                     <TextBlock HorizontalAlignment="Left" Margin="6,-14,-6,0" TextWrapping="Wrap" Text="Top Goal Scorers" VerticalAlignment="Top" Height="40" Width="193" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="26"/>
                     <TextBlock HorizontalAlignment="Left" Margin="7,16,-5,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="200" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
@@ -107,15 +126,24 @@
                     </TextBlock>
 
                 </Grid>
+                <Button x:Name="btnStartMatch" Content="Play Match" HorizontalAlignment="Left" Margin="1743,730,0,0" VerticalAlignment="Top" Click="btnStartMatch_Click"/>
+            <Grid Margin="1240,79,1227,867">
+            <TextBlock HorizontalAlignment="Left" Margin="1241,116,0,0" TextWrapping="Wrap" Text="Matches" VerticalAlignment="Top" Height="40" Width="603" Style="{StaticResource SubheaderTextStyle}" TextAlignment="Center"/>
+                    <Button Content="+" HorizontalAlignment="Left" Margin="17,21,0,0" VerticalAlignment="Top"/>
+                    <Button Content="-" HorizontalAlignment="Left" Margin="60,21,0,0" VerticalAlignment="Top"/>
+                    <Button Content="+" HorizontalAlignment="Left" Margin="557,21,0,0" VerticalAlignment="Top"/>
+                    <Button Content="-" HorizontalAlignment="Left" Margin="510,21,0,0" VerticalAlignment="Top"/>
+                </Grid>
+
             </Grid>
 		</ScrollViewer>
-        <Grid>
+        <Grid  Grid.RowSpan="1" Margin="-2,-26,2,8">
         	<Grid.ColumnDefinitions>
         		<ColumnDefinition Width="Auto"/>
         		<ColumnDefinition Width="*"/>
         	</Grid.ColumnDefinitions>
-        	<Button x:Name="backButton" Click="GoBack" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
-        	<TextBlock x:Name="pageTitle" Grid.Column="1" Text="FIFA Tournament Dashboard" Style="{StaticResource PageHeaderTextStyle}" Margin="0,0,0,40" Foreground="#DEFFFFFF"/>
+            <TextBlock x:Name="pageTitle" Grid.Column="1" Text="FIFA Tournament Dashboard" Style="{StaticResource PageHeaderTextStyle}" Margin="16,0,-16,70" Foreground="#FF8B8B8B" Height="47"/>
+            
         </Grid>
         
 
@@ -129,20 +157,11 @@
                 <VisualState x:Name="Filled"/>
 
                 <!-- The entire page respects the narrower 100-pixel margin convention for portrait -->
-                <VisualState x:Name="FullScreenPortrait">
-                    <Storyboard>
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
-                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PortraitBackButtonStyle}"/>
-                        </ObjectAnimationUsingKeyFrames>
-                    </Storyboard>
-                </VisualState>
+                <VisualState x:Name="FullScreenPortrait"/>
 
                 <!-- The back button and title have different styles when snapped -->
                 <VisualState x:Name="Snapped">
                     <Storyboard>
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
-                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedBackButtonStyle}"/>
-                        </ObjectAnimationUsingKeyFrames>
                         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="pageTitle" Storyboard.TargetProperty="Style">
                             <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedPageHeaderTextStyle}"/>
                         </ObjectAnimationUsingKeyFrames>
