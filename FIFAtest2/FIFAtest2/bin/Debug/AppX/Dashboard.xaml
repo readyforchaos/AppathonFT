@@ -129,10 +129,10 @@
                 <Button x:ConnectionId='1' x:Name="btnStartMatch" Content="Play Match" HorizontalAlignment="Left" Margin="1743,730,0,0" VerticalAlignment="Top"                            />
             <Grid Margin="1240,79,1227,867">
             <TextBlock HorizontalAlignment="Left" Margin="1241,116,0,0" TextWrapping="Wrap" Text="Matches" VerticalAlignment="Top" Height="40" Width="603" Style="{StaticResource SubheaderTextStyle}" TextAlignment="Center"/>
-                    <Button Content="+" HorizontalAlignment="Left" Margin="17,21,0,0" VerticalAlignment="Top"/>
-                    <Button Content="-" HorizontalAlignment="Left" Margin="60,21,0,0" VerticalAlignment="Top"/>
-                    <Button Content="+" HorizontalAlignment="Left" Margin="557,21,0,0" VerticalAlignment="Top"/>
-                    <Button Content="-" HorizontalAlignment="Left" Margin="510,21,0,0" VerticalAlignment="Top"/>
+                    <Button x:ConnectionId='2' x:Name="Player1TeamPlus" Content="+" HorizontalAlignment="Left" Margin="17,21,0,0" VerticalAlignment="Top"                              />
+                    <Button x:ConnectionId='3' x:Name="Player1TeamSubstract" Content="-" HorizontalAlignment="Left" Margin="60,21,0,0" VerticalAlignment="Top"                                   />
+                    <Button x:ConnectionId='4' x:Name="Player2TeamPlus" Content="+" HorizontalAlignment="Left" Margin="557,21,0,0" VerticalAlignment="Top"                              />
+                    <Button x:ConnectionId='5' x:Name="Player2TeamSubstract" Content="-" HorizontalAlignment="Left" Margin="510,21,0,0" VerticalAlignment="Top"                                   />
                 </Grid>
 
             </Grid>

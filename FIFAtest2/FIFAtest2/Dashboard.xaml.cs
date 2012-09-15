@@ -76,5 +76,30 @@ namespace FIFAtest2
         {
 
         }
+
+        private void Player1TeamPlus_Click(object sender, RoutedEventArgs e)
+        {
+            bracket.Matches[bracket.CurrentMatch].Club1Goals++;
+        }
+
+        private void Player1TeamSubstract_Click(object sender, RoutedEventArgs e)
+        {
+            bracket.Matches[bracket.CurrentMatch].Club1Goals--;
+        }
+
+        private void Player2TeamPlus_Click(object sender, RoutedEventArgs e)
+        {
+            bracket.Matches[bracket.CurrentMatch].Club2Goals++;
+        }
+
+        private void Player2TeamSubstract_Click(object sender, RoutedEventArgs e)
+        {
+            bracket.Matches[bracket.CurrentMatch].Club2Goals--;
+        }
+
+        void UpdateGoals()
+        {
+            
+        }
     }
 }

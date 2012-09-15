@@ -9,12 +9,14 @@ namespace Backend
     {
         List<Player> players;
         public List<Match> Matches{ get; private set; }
-        int matchCount;
+        public int MatchCount { get; private set; }
+        public int CurrentMatch { get; set; }
 
         public Bracket(List<Player> players)
         {
             this.players = players;
             Matches = new List<Match>();
+            CurrentMatch = 0;
             GenerateMatches();
         }
 
@@ -22,7 +24,7 @@ namespace Backend
         {
             for (int i = 1; i <= players.Count; i++)
             {
-                matchCount += (players.Count() - i);
+                MatchCount += (players.Count() - i);
             }
 
             int matchMaking = 0;
@@ -30,7 +32,7 @@ namespace Backend
             Random rng = new Random();
             //Match temp = new Match(players[0], players[1]);
            // Matches.Add(temp);
-            while (matchMaking < matchCount)
+            while (matchMaking < MatchCount)
             {
                 int player1 = rng.Next(players.Count);
                 int player2 = rng.Next(players.Count);
