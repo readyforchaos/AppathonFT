@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>AACPI0D2E071</Machine>
-    <WindowsUser>aa206</WindowsUser>
+    <Machine>ALIENWARE</Machine>
+    <WindowsUser>Andy</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>93C71884A505C443C9EF30E8FDCAA75468F79F8975A7AEAFCE8F1CFADE3E8BFA</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>C585DD851982AF552DBF6E1B87ADEC9645F3E2B2E8E71C07738B91D1508240C2</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>6aa4c05a-fea8-4b6e-8228-78c1e096a570_1.0.0.0_neutral__nsf9e2fmhb1sj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>6aa4c05a-fea8-4b6e-8228-78c1e096a570_nsf9e2fmhb1sj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>6aa4c05a-fea8-4b6e-8228-78c1e096a570</RegisteredPackageID>
@@ -13,112 +13,112 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-09-15T05:50:06.451</Modified>
+      <Modified>2012-09-15T12:52:07.982</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\FIFAtest2.exe">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\FIFAtest2.exe">
       <PackagePath>FIFAtest2.exe</PackagePath>
-      <Modified>2012-09-15T09:54:27.184</Modified>
+      <Modified>2012-09-15T13:40:32.503</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\FIFAtest2.pdb">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\FIFAtest2.pdb">
       <PackagePath>FIFAtest2.pdb</PackagePath>
-      <Modified>2012-09-15T09:54:27.174</Modified>
+      <Modified>2012-09-15T13:40:32.433</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\Assets\half_str.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\Assets\half_str.png">
       <PackagePath>Assets\half_str.png</PackagePath>
-      <Modified>2012-09-14T22:50:39.612</Modified>
+      <Modified>2012-09-15T12:46:18.528</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\Assets\Logo.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-09-14T21:02:53.107</Modified>
+      <Modified>2012-09-15T12:46:18.523</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\Assets\SmallLogo.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\Assets\SmallLogo.png">
       <PackagePath>Assets\SmallLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-09-14T21:02:53.108</Modified>
+      <Modified>2012-09-15T12:46:18.524</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
-      <Modified>2012-09-14T21:02:53.109</Modified>
+      <Modified>2012-09-15T12:46:18.526</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-09-14T21:02:53.110</Modified>
+      <Modified>2012-09-15T12:46:18.527</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\Assets\wallpaper-1220195.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\Assets\wallpaper-1220195.png">
       <PackagePath>Assets\wallpaper-1220195.png</PackagePath>
-      <Modified>2012-09-14T21:02:53.113</Modified>
+      <Modified>2012-09-15T12:46:18.532</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\check_final.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\check_final.png">
       <PackagePath>check_final.png</PackagePath>
-      <Modified>2012-09-14T21:02:53.375</Modified>
+      <Modified>2012-09-15T12:46:18.931</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\leeds.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\leeds.png">
       <PackagePath>leeds.png</PackagePath>
-      <Modified>2012-09-14T21:02:53.377</Modified>
+      <Modified>2012-09-15T12:46:18.932</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\placeholder.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\placeholder.png">
       <PackagePath>placeholder.png</PackagePath>
-      <Modified>2012-09-15T05:49:45.592</Modified>
+      <Modified>2012-09-15T12:46:19.313</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\splash.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\splash.png">
       <PackagePath>splash.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-09-14T21:02:53.546</Modified>
+      <Modified>2012-09-15T12:46:19.328</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\star.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\star.png">
       <PackagePath>star.png</PackagePath>
-      <Modified>2012-09-14T21:02:53.547</Modified>
+      <Modified>2012-09-15T12:46:19.329</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\starEmpty.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\starEmpty.png">
       <PackagePath>starEmpty.png</PackagePath>
-      <Modified>2012-09-14T21:02:53.548</Modified>
+      <Modified>2012-09-15T12:46:19.332</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\xbox-live-logo.png">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\xbox-live-logo.png">
       <PackagePath>xbox-live-logo.png</PackagePath>
-      <Modified>2012-09-14T21:02:53.554</Modified>
+      <Modified>2012-09-15T12:46:19.343</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\Common\ReadMe.txt">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
-      <Modified>2012-09-14T21:02:53.130</Modified>
+      <Modified>2012-09-15T12:46:18.558</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\rrr.jpg">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\rrr.jpg">
       <PackagePath>rrr.jpg</PackagePath>
-      <Modified>2012-09-14T21:02:53.545</Modified>
+      <Modified>2012-09-15T12:46:19.326</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\App.xaml">
-      <PackagePath>App.xaml</PackagePath>
-      <Modified>2012-09-14T21:02:53.104</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\AddPlayers.xaml">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\AddPlayers.xaml">
       <PackagePath>AddPlayers.xaml</PackagePath>
-      <Modified>2012-09-15T07:14:02.705</Modified>
+      <Modified>2012-09-15T13:02:33.160</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\Dashboard.xaml">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\Dashboard.xaml">
       <PackagePath>Dashboard.xaml</PackagePath>
-      <Modified>2012-09-15T09:33:38.394</Modified>
+      <Modified>2012-09-15T12:46:18.574</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\ChooseTeams.xaml">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\ChooseTeams.xaml">
       <PackagePath>ChooseTeams.xaml</PackagePath>
-      <Modified>2012-09-15T05:51:34.286</Modified>
+      <Modified>2012-09-15T12:46:18.546</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\Common\StandardStyles.xaml">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
-      <Modified>2012-09-14T21:02:53.133</Modified>
+      <Modified>2012-09-15T12:46:18.567</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\MainPage.xaml">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
-      <Modified>2012-09-14T21:02:53.148</Modified>
+      <Modified>2012-09-15T12:46:18.585</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2012-09-15T12:46:18.521</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2012-09-15T05:50:06.245</Modified>
+      <Modified>2012-09-15T12:52:07.794</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

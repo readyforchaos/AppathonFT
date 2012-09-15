@@ -32,7 +32,7 @@ namespace FIFAtest2
             this.InitializeComponent();
             GenerateLists();
             count = 0;
-            PlayerName.Text = "Select team, " + App.Instance.Players[0].Name + ":";
+            PlayerName.Text = "";//Select team, " + App.Instance.Players[0].Name + ":";
             //Fails to get the name of the Player
             //PlayerName.Text = App.Instance.Players[0].Name;
         }
@@ -75,7 +75,7 @@ namespace FIFAtest2
             if (ClubList.SelectedIndex > 0)
             {
                 App.Instance.Players[count].Club = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex];
-                PlayerName.Text = "Select team, " + App.Instance.Players[count].Name + ":";
+                PlayerName.Text = "";//Select team, " + App.Instance.Players[count].Name + ":";
                 count++;
                 LeagueList.SelectedIndex = -1;
                 ClubList.SelectedIndex = -1;
@@ -138,10 +138,91 @@ namespace FIFAtest2
                 BitmapImage bi = new BitmapImage();
                 bi.UriSource = new Uri(App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].logo);
                 ClubImage.Source = bi;
+                GenerateStarRating();
             }
-
         }
 
+            void GenerateStarRating()
+            {
+            double score = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].score;
+            BitmapImage star = new BitmapImage(new Uri("ms-appx:///star.png"));
+            BitmapImage emptyStar = new BitmapImage(new Uri("ms-appx:///starEmpty.png"));
+            BitmapImage halfStar = new BitmapImage(new Uri("ms-appx:///Assets/half_str.png"));
 
+            //star.UriSource = new Uri(@"star.png", UriKind.Relative);//@"C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\star.png");
+            //emptyStar.UriSource = new Uri(@"C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\starEmpty.png");
+            //halfStar.UriSource = new Uri(@"C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\assets\half_str.png");
+            //Star1.Source.
+            
+
+            if (score >= 1)
+            {
+                Star1.Source = star;
+            }
+            else if (score < 1 && score > 0)
+            {
+                Star1.Source = halfStar;
+            }
+            else
+            {
+                Star1.Source = emptyStar;
+            }
+
+            if (score >= 2)
+            {
+                Star2.Source = star;
+            }
+            else if (score < 2 && score > 1)
+            {
+                Star2.Source = halfStar;
+            }
+            else
+            {
+                Star2.Source = emptyStar;
+            }
+
+            if (score >= 3)
+            {
+                Star3.Source = star;
+            }
+            else if (score < 3 && score > 2)
+            {
+                Star3.Source = halfStar;
+            }
+            else
+            {
+                Star3.Source = emptyStar;
+            }
+
+            if (score >= 4)
+            {
+                Star4.Source = star;
+            }
+            else if (score < 4 && score > 3)
+            {
+                Star4.Source = halfStar;
+            }
+            else
+            {
+                Star4.Source = emptyStar;
+            }
+
+            if (score == 5)
+            {
+                Star5.Source = star;
+            }
+            else if (score < 5 && score > 4)
+            {
+                Star5.Source = halfStar;
+            }
+            else
+            {
+                Star5.Source = emptyStar;
+            }
+
+            
+        }
+
+        
     }
 }

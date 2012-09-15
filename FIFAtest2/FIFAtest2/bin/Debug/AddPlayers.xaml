@@ -80,11 +80,14 @@
 <!--FERDIG MED HEADER-->
             
             <Grid HorizontalAlignment="Left" Height="69" Margin="114,10,0,0" VerticalAlignment="Top" Width="515">
-                <Grid HorizontalAlignment="Left" Height="255" Margin="10,10,-100,-196" VerticalAlignment="Top" Width="605">
-                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Assign players" VerticalAlignment="Top" Height="53" Width="501" FontSize="36" Foreground="White"/>
-                    
-                    <Button x:ConnectionId='2' x:Name="AddPlayer" Content="Add Players" HorizontalAlignment="Left" Margin="329,222,0,-1" VerticalAlignment="Top"                        />
-                    <ListView x:Name="PlayerList" HorizontalAlignment="Left" Height="100" Margin="10,68,0,0" VerticalAlignment="Top" Width="441">
+                <Grid HorizontalAlignment="Left" Height="267" Margin="10,10,-100,-208" VerticalAlignment="Top" Width="605">
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Width="501" FontSize="36" Foreground="White">
+                    	<Run Text="Assign players"/>
+                    	<Run Text=" to Tournament"/>
+                    </TextBlock>
+
+                    <Button x:ConnectionId='2' x:Name="AddPlayer" Content="Add Players" HorizontalAlignment="Left" Margin="344,222,0,0" VerticalAlignment="Top"                         Height="35"/>
+                    <ListView x:Name="PlayerList" HorizontalAlignment="Left" Height="149" Margin="10,68,0,0" VerticalAlignment="Top" Width="595">
                         
                         <ListView.ItemTemplate>
                             <DataTemplate>
@@ -99,7 +102,7 @@
             </Grid>
 
         </Grid>
-    	<Button x:ConnectionId='1' Content="Continue" HorizontalAlignment="Left" Margin="585.747,238.112,0,0" VerticalAlignment="Top" Height="40.428" Width="147.643" Grid.Row="1"                 />
+    	<Button x:ConnectionId='1' Content="Continue" HorizontalAlignment="Left" Margin="586,241,0,0" VerticalAlignment="Top" Height="37" Width="147.643" Grid.Row="1"                 />
 
 
         <VisualStateManager.VisualStateGroups>
