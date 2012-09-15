@@ -55,8 +55,8 @@
                 <Image x:Name="Star3" Margin="274.201,237.591,301.799,261.409" Source="star.png" Stretch="Fill"/>
                 <Image x:Name="Star2" Margin="225.201,238.636,351.799,261.364" Source="star.png" Stretch="Fill"/>
             	<Image x:Name="Star1" Margin="176.201,238.636,400.799,261.364" Source="star.png" Stretch="Fill"/>
-            	<TextBlock x:Name="ClubName" Margin="-1.647,12.633,8.646,0" TextWrapping="Wrap" Text="" Height="51" Width="618.132" Style="{StaticResource HeaderTextStyle}" TextAlignment="Center" VerticalAlignment="Top" FontSize="40" Foreground="#DEFFFFFF"/>
-            	<Image x:Name="ClubImage" Margin="206.557,76.636,228.443,307.364" Source="" Stretch="Fill"/>
+            	<TextBlock x:Name="ClubName" Margin="-1.647,12.633,8.646,0" TextWrapping="Wrap" Text="Select club" Height="51" Width="618.132" Style="{StaticResource HeaderTextStyle}" TextAlignment="Center" VerticalAlignment="Top" FontSize="40" Foreground="#DEFFFFFF"/>
+            	<Image x:Name="ClubImage" Margin="206.557,76.636,228.443,307.364" Source="placeholder.png" Stretch="Fill"/>
             	<Grid HorizontalAlignment="Left" Height="44.142" Margin="193.555,323.762,0,0" VerticalAlignment="Top" Width="218.994" Background="#FF5D5D5D"/>
             	<Rectangle HorizontalAlignment="Left" Height="69" Margin="200.556,312.834,0,0" VerticalAlignment="Top" Width="55.644" Fill="#FFE6E6E6" Stroke="Black"/>
             	<Rectangle HorizontalAlignment="Left" Height="69" Margin="274.201,312.834,0,0" Stroke="Black" VerticalAlignment="Top" Width="55.644" Fill="#FFE6E6E6"/>

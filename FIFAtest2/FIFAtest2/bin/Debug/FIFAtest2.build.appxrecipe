@@ -46,6 +46,9 @@
     <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\leeds.png">
       <PackagePath>leeds.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\placeholder.png">
+      <PackagePath>placeholder.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aa206\Documents\GitHub\AppathonFT\FIFAtest2\FIFAtest2\splash.png">
       <PackagePath>splash.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>

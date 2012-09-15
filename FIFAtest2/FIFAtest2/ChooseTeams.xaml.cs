@@ -79,7 +79,7 @@ namespace FIFAtest2
                 count++;
                 LeagueList.SelectedIndex = -1;
                 ClubList.SelectedIndex = -1;
-                ClubName.Text = "";
+                ClubName.Text = "Select club";
                 ClubImage.Source = null;
                 Def.Text = "";
                 Mid.Text = "";
