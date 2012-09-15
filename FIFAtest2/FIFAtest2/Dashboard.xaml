@@ -50,80 +50,60 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <Grid HorizontalAlignment="Left" Height="136" Margin="954,224,0,0" VerticalAlignment="Top" Width="193">
+                <Grid HorizontalAlignment="Left" Height="136" Margin="954,224,0,0" VerticalAlignment="Top" Width="202">
                     <TextBlock HorizontalAlignment="Left" Margin="6,-14,-6,0" TextWrapping="Wrap" Text="Top Goal Scorers" VerticalAlignment="Top" Height="40" Width="193" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="26"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="7,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="187" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
+                    <TextBlock HorizontalAlignment="Left" Margin="7,16,-5,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="200" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
                     	<Run Text="Eden Hazard"/>
-                    	<Run Text=" "/>
-                    	<Run Text="       "/>
-                    	<Run Text="    0"/>
+                    	<Run Text="..."/>
+                    	<Run Text="            "/>
                     </TextBlock>
-                    <TextBlock HorizontalAlignment="Left" Margin="6,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="187" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
-                    	<Run Text="Wayne Rooney "/>
-                    	<Run Text="    "/>
-                    	<Run Text="    "/>
-                    	<Run Text="0"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="6,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="196" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
+                    	<Run Text="Wayne Rooney"/>
+                    	<Run Text="..."/>
+                    	<Run Text="         "/>
                     </TextBlock>
-                    <TextBlock HorizontalAlignment="Left" Margin="6,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="187" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
-                    	<Run Text="Arouna Kone "/>
-                    	<Run Text="      "/>
-                    	<Run Text="    "/>
-                    	<Run Text=" "/>
-                    	<Run Text="0"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="6,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="196" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
+                    	<Run Text="Arouna Kone"/>
+                    	<Run Text="..."/>
+                    	<Run Text="            "/>
                     </TextBlock>
 
                 </Grid>
-                <Grid HorizontalAlignment="Left" Height="136" Margin="954,390,0,0" VerticalAlignment="Top" Width="193">
+                <Grid HorizontalAlignment="Left" Height="136" Margin="954,390,0,0" VerticalAlignment="Top" Width="202">
                     <TextBlock HorizontalAlignment="Left" Margin="6,-14,-6,110" TextWrapping="Wrap" Text="Most Assists" VerticalAlignment="Bottom" Height="40" Width="193" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="28"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="7,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="187" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
+                    <TextBlock HorizontalAlignment="Left" Margin="7,16,-1,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="196" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
                     	<Run Text="Callum Morris"/>
-                    	<Run Text=" "/>
-                    	<Run Text="      "/>
-                    	<Run Text="   0"/>
+                    	<Run Text="..."/>
+                    	<Run Text="          "/>
                     </TextBlock>
                     <TextBlock HorizontalAlignment="Left" Margin="6,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="187" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
-                    	<Run Text="Darren Bent    "/>
-                    	<Run Text=" "/>
-                    	<Run Text="    "/>
-                    	<Run Text="    "/>
-                    	<Run Text="0"/>
+                    	<Run Text="Darren Bent"/>
+                    	<Run Text="..."/>
+                    	<Run Text="             "/>
                     </TextBlock>
-                    <TextBlock HorizontalAlignment="Left" Margin="6,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="187" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
+                    <TextBlock HorizontalAlignment="Left" Margin="6,80,-1,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="197" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
                     	<Run Text="Charles N'Zogbia"/>
-                    	<Run Text="  "/>
-                    	<Run Text=" "/>
-                    	<Run Text=" "/>
-                    	<Run Text=" "/>
-                    	<Run Text="0"/>
+                    	<Run Text="..."/>
+                    	<Run Text="     "/>
                     </TextBlock>
 
                 </Grid>
-                <Grid HorizontalAlignment="Left" Height="136" Margin="954,575,0,0" VerticalAlignment="Top" Width="193">
+                <Grid HorizontalAlignment="Left" Height="136" Margin="954,575,0,0" VerticalAlignment="Top" Width="202">
                     <TextBlock HorizontalAlignment="Left" Margin="6,-14,-6,110" TextWrapping="Wrap" Text="Avg possession" Width="193" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="28"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="7,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="187" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
-                    	<Run Text="C"/>
-                    	<Run Text="helsea FC"/>
-                    	<Run Text=" "/>
-                    	<Run Text="      "/>
-                    	<Run Text="   "/>
-                    	<Run Text="  0%"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="5,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="195" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
+                    	<Run Text="Chelsea FC"/>
+                    	<Run Text="..."/>
+                    	<Run Text="            "/>
                     </TextBlock>
-                    <TextBlock HorizontalAlignment="Left" Margin="6,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="187" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
-                    	<Run Text="Fulham FC          "/>
-                    	<Run Text="  "/>
-                    	<Run Text=" "/>
-                    	<Run Text="0"/>
-                    	<Run Text="%"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="6,48,-1,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="197" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
+                    	<Run Text="Fulham FC"/>
+                    	<Run Text="..."/>
+                    	<Run Text="             "/>
                     </TextBlock>
-                    <TextBlock HorizontalAlignment="Left" Margin="6,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="187" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
+                    <TextBlock HorizontalAlignment="Left" Margin="6,80,-1,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="197" Foreground="White" Style="{StaticResource HeaderTextStyle}" FontSize="20">
                     	<Run Text="Norwich City"/>
-                    	<Run Text=" "/>
-                    	<Run Text=" "/>
-                    	<Run Text=" "/>
-                    	<Run Text=" "/>
-                    	<Run Text="     "/>
-                    	<Run Text="0"/>
-                    	<Run Text="%"/>
+                    	<Run Text="..."/>
+                    	<Run Text="         "/>
                     </TextBlock>
 
                 </Grid>
