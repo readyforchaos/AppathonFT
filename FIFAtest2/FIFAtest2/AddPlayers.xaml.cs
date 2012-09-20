@@ -72,6 +72,7 @@ namespace FIFAtest2
 
         private void AddPlayer_Click(object sender, RoutedEventArgs e)
         {
+            //Set focus on added ListItem
             players.Add(new Player());
         }
     }

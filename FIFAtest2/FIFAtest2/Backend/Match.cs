@@ -7,7 +7,7 @@ namespace Backend
 {
     class Match
     {
-        String club1, club2;
+        public String club1, club2;
         int club1Goals, club2Goals;
         public int Club1Goals
         {

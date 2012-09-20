@@ -22,16 +22,17 @@ namespace Backend
 
         void GenerateMatches()
         {
+
+            //Randomize List http://stackoverflow.com/questions/273313/randomize-a-listt-in-c-sharp
             for (int i = 1; i <= players.Count; i++)
             {
                 MatchCount += (players.Count() - i);
             }
 
             int matchMaking = 0;
-            Boolean matchMade = false;
+            Boolean matchFound = false;
             Random rng = new Random();
-            //Match temp = new Match(players[0], players[1]);
-           // Matches.Add(temp);
+
             while (matchMaking < MatchCount)
             {
                 int player1 = rng.Next(players.Count);
@@ -40,39 +41,23 @@ namespace Backend
                 if (player1 != player2)
                 {
                     Match temp = new Match(players[player1], players[player2]);
-                    Match temp2 = new Match(players[player2], players[player1]);
-                    matchMade = true;
+                    matchFound = true;
                     foreach (Match m in Matches)
                     {
-                        /*if (!m.Equals(temp) && matchMade != false)
+                        if ((m.club1 == temp.club1 && m.club2 == temp.club2) || 
+                            (m.club1 == temp.club2 && m.club2 == temp.club1))
                         {
-                            matchMade = true;
-                        }
-                        else
-                        {
-                            matchMade = false;
-                        }*/
-
-                        if(m == temp || m == temp2)
-                        {
-                            matchMade = false;
+                            matchFound = false;
                             break;
                         }
                     }
-                    if (matchMade)
+                    if (matchFound)
                     {
                         Matches.Add(temp);
                         matchMaking++;
                     }
-
                 }
-        
-
             }
-            
-
         }
-
-
     }
 }

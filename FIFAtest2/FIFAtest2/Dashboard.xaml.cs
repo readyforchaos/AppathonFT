@@ -59,17 +59,18 @@ namespace FIFAtest2
 
         void GenerateMatchList()
         {
-            /*for (int i = 0; i < bracket.Matches.Count(); i++)
-            {
-                ListViewItem temp = new ListViewItem();
-                
-            }*/
             foreach (Match m in bracket.Matches)
             {
                 ListViewItem temp = new ListViewItem();
                 temp.Content = m.ToString();
                 MatchList.Items.Add(temp);
             }
+        }
+
+        void GenerateScoreBoard()
+        {
+            //ListPosition
+            
         }
 
         private void btnStartMatch_Click(object sender, RoutedEventArgs e)

@@ -28,13 +28,10 @@ namespace FIFAtest2
 
         public BasicPage2()
         {
-            
             this.InitializeComponent();
             GenerateLists();
             count = 0;
-            PlayerName.Text = "";//Select team, " + App.Instance.Players[0].Name + ":";
-            //Fails to get the name of the Player
-            //PlayerName.Text = App.Instance.Players[0].Name;
+            PlayerName.Text = "Select team, " + App.Instance.Players[0].Name + ":";
         }
 
         /// <summary>
@@ -74,20 +71,39 @@ namespace FIFAtest2
         {
             if (ClubList.SelectedIndex > 0)
             {
-                App.Instance.Players[count].Club = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex];
-                PlayerName.Text = "";//Select team, " + App.Instance.Players[count].Name + ":";
-                count++;
-                LeagueList.SelectedIndex = -1;
-                ClubList.SelectedIndex = -1;
-                ClubName.Text = "Select club";
-                ClubImage.Source = null;
-                Def.Text = "";
-                Mid.Text = "";
-                Att.Text = "";
+                Boolean matchFound = true;
 
-                if ((count) == App.Instance.Players.Count())
+                club foo = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex];
+
+                //Checks to see if club has been selected by a previous player
+                foreach (Player p in App.Instance.Players)
                 {
-                    this.Frame.Navigate(typeof(BasicPage3), null);
+                    if (foo == p.Club)
+                    {
+                        matchFound = false;
+                    }
+                }
+
+                //TODO: Add text if club has already been selected to alert the player
+                if (matchFound)
+                {
+                    App.Instance.Players[count].Club = foo;
+                    count++;
+                    if (count < App.Instance.Players.Count)
+                    {
+                        PlayerName.Text = "Select team, " + App.Instance.Players[count].Name + ":";
+                        LeagueList.SelectedIndex = -1;
+                        ClubList.SelectedIndex = -1;
+                        ClubName.Text = "Select club";
+                        ClubImage.Source = null;
+                        Def.Text = "";
+                        Mid.Text = "";
+                        Att.Text = "";
+                    }
+                    if ((count) == App.Instance.Players.Count())
+                    {
+                        this.Frame.Navigate(typeof(BasicPage3), null);
+                    }
                 }
             }
         }
@@ -142,87 +158,38 @@ namespace FIFAtest2
             }
         }
 
-            void GenerateStarRating()
-            {
+        void GenerateStarRating()
+        {
             double score = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex].score;
             BitmapImage star = new BitmapImage(new Uri("ms-appx:///star.png"));
             BitmapImage emptyStar = new BitmapImage(new Uri("ms-appx:///starEmpty.png"));
             BitmapImage halfStar = new BitmapImage(new Uri("ms-appx:///Assets/half_str.png"));
 
-            //star.UriSource = new Uri(@"star.png", UriKind.Relative);//@"C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\star.png");
-            //emptyStar.UriSource = new Uri(@"C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\starEmpty.png");
-            //halfStar.UriSource = new Uri(@"C:\Users\Andy\Documents\GitHub\AppathonFT\FIFAtest2\assets\half_str.png");
-            //Star1.Source.
-            
+            List<Image> foo = new List<Image>();
+            for (int i = 1; i <= 5; i++)
+            {
+                foo.Add(new Image());
+                if (score >= i)
+                {
+                    foo[i-1].Source = star;
+                }
+                else if (score < i && score > (i - 1))
+                {
+                    foo[i - 1].Source = halfStar;
+                }
+                else
+                {
+                    foo[i-1].Source = emptyStar;
+                }
 
-            if (score >= 1)
-            {
-                Star1.Source = star;
-            }
-            else if (score < 1 && score > 0)
-            {
-                Star1.Source = halfStar;
-            }
-            else
-            {
-                Star1.Source = emptyStar;
-            }
-
-            if (score >= 2)
-            {
-                Star2.Source = star;
-            }
-            else if (score < 2 && score > 1)
-            {
-                Star2.Source = halfStar;
-            }
-            else
-            {
-                Star2.Source = emptyStar;
             }
 
-            if (score >= 3)
-            {
-                Star3.Source = star;
-            }
-            else if (score < 3 && score > 2)
-            {
-                Star3.Source = halfStar;
-            }
-            else
-            {
-                Star3.Source = emptyStar;
-            }
+            Star1.Source = foo[0].Source;
+            Star2.Source = foo[1].Source;
+            Star3.Source = foo[2].Source;
+            Star4.Source = foo[3].Source;
+            Star5.Source = foo[4].Source;
 
-            if (score >= 4)
-            {
-                Star4.Source = star;
-            }
-            else if (score < 4 && score > 3)
-            {
-                Star4.Source = halfStar;
-            }
-            else
-            {
-                Star4.Source = emptyStar;
-            }
-
-            if (score == 5)
-            {
-                Star5.Source = star;
-            }
-            else if (score < 5 && score > 4)
-            {
-                Star5.Source = halfStar;
-            }
-            else
-            {
-                Star5.Source = emptyStar;
-            }
-
-            
         }
-
-        
     }
 }

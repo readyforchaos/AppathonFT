@@ -25,17 +25,11 @@ namespace FIFAtest2
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        //public List<league> Leagues { get; set; }
-        //public List<Player> Players { get; set; }
 
         public MainPage()
         {
-            //Players = new List<Player>();
-            //GenerateLeague();
-            //ObjectHolder.GenerateLeague();
-            this.InitializeComponent();
 
-            
+            this.InitializeComponent();
         }
 
         /// <summary>
@@ -51,15 +45,5 @@ namespace FIFAtest2
         {
             this.Frame.Navigate(typeof(BasicPage1), null);
         }
-
-        /*void GenerateLeague()
-        {
-            Leagues = new List<league>();
-            for (int i = 1; i <= 32; i++)
-            {
-                league temp = ObjectSerializer.FromXML<league>("http://fifaapi.com/league/" + i + ".xml");
-                Leagues.Add(temp);
-            }
-        }*/
     }
 }
