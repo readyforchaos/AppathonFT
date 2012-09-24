@@ -25,14 +25,18 @@ namespace FIFAtest2
     public sealed partial class BasicPage1 : FIFAtest2.Common.LayoutAwarePage
     {
 
+        //ObservableCollection<Player> players;
         ObservableCollection<Player> players;
 
         public BasicPage1()
         {
             this.InitializeComponent();
+            //players = new ObservableCollection<Player>();
             players = new ObservableCollection<Player>();
 
+            //PlayerList.ItemsSource = players;
             PlayerList.ItemsSource = players;
+
         }
 
         /// <summary>
@@ -60,9 +64,10 @@ namespace FIFAtest2
 
         private void Continue(object sender, RoutedEventArgs e)
         {
+
             foreach (Player p in players)
             {
-                if (p.Name != "")
+                if (p.Name != null)
                 {
                     App.Instance.Players.Add(p);
                 }
@@ -72,8 +77,8 @@ namespace FIFAtest2
 
         private void AddPlayer_Click(object sender, RoutedEventArgs e)
         {
-            //Set focus on added ListItem
             players.Add(new Player());
+            
         }
     }
 }

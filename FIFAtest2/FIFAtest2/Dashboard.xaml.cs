@@ -29,7 +29,7 @@ namespace FIFAtest2
         public BasicPage3()
         {
             bracket = new Bracket(App.Instance.Players);
-
+            
             this.InitializeComponent();
             GenerateMatchList();
         }
@@ -59,6 +59,7 @@ namespace FIFAtest2
 
         void GenerateMatchList()
         {
+            MatchList.Items.Clear();
             foreach (Match m in bracket.Matches)
             {
                 ListViewItem temp = new ListViewItem();
@@ -71,31 +72,40 @@ namespace FIFAtest2
         {
             //ListPosition
             
+            
         }
 
         private void btnStartMatch_Click(object sender, RoutedEventArgs e)
         {
-
+            if (bracket.CurrentMatch < bracket.MatchCount - 1)
+            {
+                bracket.CurrentMatch++;
+            }
+            
         }
 
         private void Player1TeamPlus_Click(object sender, RoutedEventArgs e)
         {
             bracket.Matches[bracket.CurrentMatch].Club1Goals++;
+            GenerateMatchList();
         }
 
         private void Player1TeamSubstract_Click(object sender, RoutedEventArgs e)
         {
             bracket.Matches[bracket.CurrentMatch].Club1Goals--;
+            GenerateMatchList();
         }
 
         private void Player2TeamPlus_Click(object sender, RoutedEventArgs e)
         {
             bracket.Matches[bracket.CurrentMatch].Club2Goals++;
+            GenerateMatchList();
         }
 
         private void Player2TeamSubstract_Click(object sender, RoutedEventArgs e)
         {
             bracket.Matches[bracket.CurrentMatch].Club2Goals--;
+            GenerateMatchList();
         }
 
         void UpdateGoals()

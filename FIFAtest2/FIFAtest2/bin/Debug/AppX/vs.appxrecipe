@@ -22,11 +22,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\bin\Debug\FIFAtest2.exe">
       <PackagePath>FIFAtest2.exe</PackagePath>
-      <Modified>2012-09-20T16:25:36.578</Modified>
+      <Modified>2012-09-24T11:42:32.322</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\bin\Debug\FIFAtest2.pdb">
       <PackagePath>FIFAtest2.pdb</PackagePath>
-      <Modified>2012-09-20T16:25:36.558</Modified>
+      <Modified>2012-09-24T11:42:32.299</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\Assets\half_str.png">
       <PackagePath>Assets\half_str.png</PackagePath>
@@ -98,7 +98,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\bin\Debug\AddPlayers.xaml">
       <PackagePath>AddPlayers.xaml</PackagePath>
-      <Modified>2012-09-17T22:30:16.450</Modified>
+      <Modified>2012-09-24T11:41:58.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFAtest2\FIFAtest2\bin\Debug\Dashboard.xaml">
       <PackagePath>Dashboard.xaml</PackagePath>

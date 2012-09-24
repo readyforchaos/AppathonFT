@@ -91,7 +91,7 @@
                         
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <TextBox Text="{Binding PlayerName, Mode=TwoWay}" Foreground="Black" Width="215"></TextBox>
+                                <TextBox Text="{Binding Path=Name, Mode=TwoWay}" Foreground="Black" Width="215"></TextBox>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                         

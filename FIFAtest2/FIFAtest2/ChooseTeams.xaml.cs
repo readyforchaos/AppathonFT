@@ -69,7 +69,7 @@ namespace FIFAtest2
 
         private void GenerateFixtures(object sender, RoutedEventArgs e)
         {
-            if (ClubList.SelectedIndex > 0)
+            if (ClubList.SelectedIndex >= 0)
             {
                 Boolean matchFound = true;
 

@@ -24,8 +24,6 @@ namespace Backend
         public int GoalDifference { get; set; }
         public int Points { get; set; }
 
-        public int StartNumber { get; set; }
-
         public Player(String name, club club)
         {
             Name = name;
