@@ -1,0 +1,197 @@
+﻿<common:LayoutAwarePage
+    x:Name="pageRoot"
+    x:Class="FIFATournamentRC.Dashboard"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FIFATournamentRC"
+    xmlns:common="using:FIFATournamentRC.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+
+        <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
+        <x:String x:Key="AppName">My Application</x:String>
+    </Page.Resources>
+
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 0 contains the back button and page title
+        * Row 1 contains the rest of the page layout
+    -->
+        <Grid Background="#FF1D1D1D">
+
+        <!-- Matches -->
+
+        <Grid HorizontalAlignment="Left" Height="405" Margin="0,-5,0,0" VerticalAlignment="Top">
+                <Image Source="Assets/PentagonBackground.png" Margin="0,-58,0,58" />
+            </Grid>
+            <Grid x:Name="GridHeader" HorizontalAlignment="Left" Height="135" Margin="120,0,0,0" VerticalAlignment="Top" Width="Auto">
+                <TextBlock Margin="0,80,-1110,-24" Text="FIFA Tournament Dashboard" FontSize="56" FontFamily="Segoe UI" Foreground="#FF00A2FF" />
+        </Grid>
+            <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Height="5"  >
+                <Image Source="Assets/list.png" Stretch="Fill" />
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="577" Margin="72,181,0,0" VerticalAlignment="Top" Width="603" Background="#CC191919">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="41*"/>
+                <RowDefinition Height="248*"/>
+            </Grid.RowDefinitions>
+            <ListView x:Name="MatchList" HorizontalAlignment="Left" Height="485" Margin="10,46,0,0" VerticalAlignment="Top" Width="583" Foreground="#FF00A2FF" Grid.RowSpan="2">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ListViewItem x:Name="lstGame" Margin="0" HorizontalAlignment="Center"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Grid HorizontalAlignment="Left" Height="4" Margin="0,37,0,0" VerticalAlignment="Top" Width="603" Background="#FF00A2FF"/>
+                <TextBlock Name="txbMatches" HorizontalAlignment="Left" Margin="245,-2,0,0" TextWrapping="Wrap" Text="Matches" VerticalAlignment="Top" Style="{StaticResource SubheaderTextStyle}"/>
+            <Button x:ConnectionId='6' Name="btn_Match" Content="Next Match"                        HorizontalAlignment="Left" Margin="485,454.5,0,0" VerticalAlignment="Top" Height="41" Width="108" Grid.Row="1"/>
+        </Grid>
+
+        <Grid Name="AddGoals2" HorizontalAlignment="Left" Height="44" Margin="654,246,0,0" VerticalAlignment="Top" Width="88">
+            <Image Source="Assets/AddPlayersPatch.png" Margin="-21,0,0,-10" />
+            <Grid x:ConnectionId='5' Height="26" Margin="10,0,28,18"                                >
+                <TextBlock  Text="  +" FontSize="24" Height="26" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" />
+            </Grid>
+        </Grid>
+        <Grid Name="SubtractGoals2" HorizontalAlignment="Left" Height="44" Margin="654,279,0,0" VerticalAlignment="Top" Width="88">
+            <Image Source="Assets/AddPlayersPatch.png" Margin="-21,0,0,-10" />
+            <Grid x:ConnectionId='4' Height="26" Margin="10,0,28,18"                                     >
+                <TextBlock  Text="  -" FontSize="48" Height="55" Width="71" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="-14,-17,-7,-12" />
+            </Grid>
+        </Grid>
+        <Grid Name="AddGoals1" HorizontalAlignment="Left" Height="44" Margin="3,246,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <CompositeTransform ScaleX="-1"/>
+            </Grid.RenderTransform>
+            <Image Source="Assets/AddPlayersPatch.png" Margin="-21,0,0,-10" />
+            <Grid x:ConnectionId='3' Height="26" Margin="10,0,28,18"                                >
+                <TextBlock  Text="  +" FontSize="24" Height="26" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" />
+            </Grid>
+        </Grid>
+        <Grid Name="SubtractGoals1" HorizontalAlignment="Left" Height="44" Margin="3,279,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <CompositeTransform ScaleX="-1"/>
+            </Grid.RenderTransform>
+            <Image Source="Assets/AddPlayersPatch.png" Margin="-21,0,0,-10" />
+            <Grid x:ConnectionId='2' Height="26" Margin="10,0,28,18"                                     >
+                <TextBlock  Text="  -" FontSize="48" Height="55" Width="71" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="-14,-17,-7,-12" />
+            </Grid>
+        </Grid>
+
+
+        <!-- League Table -->
+            
+            
+        <Grid HorizontalAlignment="Left" Height="577" Margin="756,181,0,0" VerticalAlignment="Top" Width="603" Background="#CC191919">
+            <!-- LEADERBOARD DOWN UNDER-->
+            <!--<GridView Margin="10,77,10,10">
+                <GridView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Name="Leaderboard" Orientation="Horizontal">
+                            <TextBlock Text="{Binding Position}"/>
+                            <TextBlock Text="{Binding Club.name}"/>
+                            <TextBlock Text="{Binding Name}" />
+                            <TextBlock Text="{Binding Played}"/>
+                            <TextBlock Text="{Binding Wins}"/>
+                            <TextBlock Text="{Binding Ties}"/>
+                            <TextBlock Text="{Binding Losses}"/>
+                            <TextBlock Text="{Binding GoalsFor}"/>
+                            <TextBlock Text="{Binding GoalsAgainst}"/>
+                            <TextBlock Text="{Binding GoalDifference}"/>
+                            <TextBlock Text="{Binding Points}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>-->
+            <Grid Margin="10,82,10,10">
+                <Grid.Resources>
+                    <Thickness x:Key="ColumnMargin">10,0,0,0</Thickness>
+                </Grid.Resources>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" MinWidth="10" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" MinHeight="16" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Id" Grid.ColumnSpan="2" Margin="0,0,-22,0"/>
+                <TextBlock Grid.Column="1" Margin="32,0,-152,0" Text="Pid" RenderTransformOrigin="2.938,0.571"/>
+
+                <ItemsControl Grid.Row="1" ItemsSource="{Binding bracket.Players}" Grid.ColumnSpan="2" Margin="0,0,-17,0">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Position}"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <ItemsControl Grid.Column="1" Grid.Row="1" Margin="{StaticResource ColumnMargin}" ItemsSource="{Binding bracket.Players}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Club.name}"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Grid>
+
+            <!-- LEADERBOARD ENDS RIGHT HERE RIGHT NOW-->
+            
+            <Grid HorizontalAlignment="Left" Height="4" Margin="0,37,0,0" VerticalAlignment="Top" Width="603" Background="#FF00A2FF"/>
+            <TextBlock HorizontalAlignment="Left" Margin="245,-2,0,0" TextWrapping="Wrap" Text="Leaderboard" VerticalAlignment="Top" Style="{StaticResource SubheaderTextStyle}"/>
+            <Grid HorizontalAlignment="Left" Height="31" Margin="10,46,0,0" VerticalAlignment="Top" Width="593">
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="602" FontSize="18" Margin="-9,0,0,0">
+                	<Run Text="Position  Club       "/>
+                	<Run Text=" Name      "/>
+                	<Run Text=" Played   Wins   Ties  Losses  GF "/>
+                	<Run Text=" GA  "/>
+                	<Run Text="GD "/>
+                	<Run Text="PTS"/>
+                </TextBlock>
+            </Grid>
+        </Grid>
+        <Button x:ConnectionId='1' Content="Button"                       HorizontalAlignment="Left" Margin="932,80,0,0" VerticalAlignment="Top"/>
+
+
+
+        <!-- Back button and page title -->
+
+
+            <VisualStateManager.VisualStateGroups>
+
+                <!-- Visual states reflect the application's view state -->
+                <VisualStateGroup x:Name="ApplicationViewStates">
+                    <VisualState x:Name="FullScreenLandscape"/>
+                    <VisualState x:Name="Filled"/>
+
+                    <!-- The entire page respects the narrower 100-pixel margin convention for portrait -->
+                    <VisualState x:Name="FullScreenPortrait">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PortraitBackButtonStyle}"/>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+
+                    <!-- The back button and title have different styles when snapped -->
+                    <VisualState x:Name="Snapped">
+                        <Storyboard>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedBackButtonStyle}"/>
+                            </ObjectAnimationUsingKeyFrames>
+                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="pageTitle" Storyboard.TargetProperty="Style">
+                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedPageHeaderTextStyle}"/>
+                            </ObjectAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+    </Grid>
+</common:LayoutAwarePage>
+
