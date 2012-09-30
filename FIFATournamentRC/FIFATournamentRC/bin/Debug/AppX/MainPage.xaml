@@ -14,7 +14,7 @@
             <Image Source="Assets/PentagonBackground.png" Margin="0,-58,0,58" />
         </Grid>
         <Grid x:Name="GridHeader" HorizontalAlignment="Left" Height="135" Margin="120,0,0,0" VerticalAlignment="Top" Width="Auto">
-                <TextBlock Margin="0,80,0,-91" Text="FIFA Tournament" FontSize="56" FontFamily="Segoe UI" Foreground="#FF00A2FF" />
+                <TextBlock Margin="0,80,0,-91" Text="Football Tournament" FontSize="56" FontFamily="Segoe UI" Foreground="#FF00A2FF" />
 
         </Grid>
 
@@ -23,14 +23,14 @@
         </Grid>
         <Grid HorizontalAlignment="Left" Height="374" Margin="120,307,0,0" VerticalAlignment="Top" Width="603" Background="#FF191919">
             <TextBlock HorizontalAlignment="Left" Height="46" Margin="12,11,0,0" TextWrapping="Wrap" Text="Add Players to Tournament" VerticalAlignment="Top" Width="584" Style="{StaticResource SubheaderTextStyle}"/>
-        	<ListView x:Name="PlayerList" HorizontalAlignment="Left" Height="252" Margin="10,61,0,0" VerticalAlignment="Top" Width="583" Background="#FF131313">
+            <ListView x:ConnectionId='2' x:Name="PlayerList"                                        HorizontalAlignment="Left" Height="252" Margin="10,61,0,0" VerticalAlignment="Top" Width="583" Background="#FF131313">
         		<ListView.ItemTemplate>
         			<DataTemplate>
         				<TextBox Text="{Binding Name, Mode=TwoWay}" Foreground="Black" Width="215"/>
         			</DataTemplate>
         		</ListView.ItemTemplate>
         	</ListView>
-            <Button x:ConnectionId='2' Content="Continue" HorizontalAlignment="Left" Margin="542,318,0,0" VerticalAlignment="Top" Style="{StaticResource PortraitBackButtonStyle}" RenderTransformOrigin="0.5,0.5"                  >
+            <Button x:ConnectionId='3' Content="Continue" HorizontalAlignment="Left" Margin="542,318,0,0" VerticalAlignment="Top" Style="{StaticResource PortraitBackButtonStyle}" RenderTransformOrigin="0.5,0.5"                  >
                 <Button.RenderTransform>
                     <CompositeTransform Rotation="180"/>
                 </Button.RenderTransform>

@@ -44,8 +44,8 @@ namespace FIFATournamentRC
             Players = new List<Player>();
             OCPlayers = new ObservableCollection<Player>();
 
-            OCPlayers.Add(new Player("anders"));
-            OCPlayers.Add(new Player("SindreKING"));
+            OCPlayers.Add(new Player());
+            OCPlayers.Add(new Player());
             OCPlayers.Add(new Player());
             
             if (NetworkInterface.GetIsNetworkAvailable())

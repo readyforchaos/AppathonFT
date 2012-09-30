@@ -29,7 +29,7 @@
                 <Image Source="Assets/PentagonBackground.png" Margin="0,-58,0,58" />
             </Grid>
             <Grid x:Name="GridHeader" HorizontalAlignment="Left" Height="135" Margin="120,0,0,0" VerticalAlignment="Top" Width="Auto">
-                <TextBlock Margin="0,80,-1110,-24" Text="FIFA Tournament Dashboard" FontSize="56" FontFamily="Segoe UI" Foreground="#FF00A2FF" />
+                <TextBlock Margin="0,80,-1110,-24" Text="Tournament Dashboard" FontSize="56" FontFamily="Segoe UI" Foreground="#FF00A2FF" />
         </Grid>
             <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Height="5"  >
                 <Image Source="Assets/list.png" Stretch="Fill" />
@@ -39,7 +39,7 @@
                 <RowDefinition Height="41*"/>
                 <RowDefinition Height="248*"/>
             </Grid.RowDefinitions>
-            <ListView x:Name="MatchList" HorizontalAlignment="Left" Height="485" Margin="10,46,0,0" VerticalAlignment="Top" Width="583" Foreground="#FF00A2FF" Grid.RowSpan="2">
+            <ListView x:ConnectionId='7' x:Name="MatchList"                                       HorizontalAlignment="Left" Height="485" Margin="10,46,0,0" VerticalAlignment="Top" Width="583" Foreground="#FF00A2FF" Grid.RowSpan="2">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ListViewItem x:Name="lstGame" Margin="0" HorizontalAlignment="Center"/>
@@ -48,19 +48,19 @@
                 </ListView>
                 <Grid HorizontalAlignment="Left" Height="4" Margin="0,37,0,0" VerticalAlignment="Top" Width="603" Background="#FF00A2FF"/>
                 <TextBlock Name="txbMatches" HorizontalAlignment="Left" Margin="245,-2,0,0" TextWrapping="Wrap" Text="Matches" VerticalAlignment="Top" Style="{StaticResource SubheaderTextStyle}"/>
-            <Button x:ConnectionId='6' Name="btn_Match" Content="Next Match"                        HorizontalAlignment="Left" Margin="485,454.5,0,0" VerticalAlignment="Top" Height="41" Width="108" Grid.Row="1"/>
+            <Button x:ConnectionId='8' Name="btn_Match" Content="Next Match"                        HorizontalAlignment="Left" Margin="486,0,0,0" VerticalAlignment="Top" Height="41" Width="120" BorderBrush="#FF00A2FF"/>
         </Grid>
 
         <Grid Name="AddGoals2" HorizontalAlignment="Left" Height="44" Margin="654,246,0,0" VerticalAlignment="Top" Width="88">
             <Image Source="Assets/AddPlayersPatch.png" Margin="-21,0,0,-10" />
-            <Grid x:ConnectionId='5' Height="26" Margin="10,0,28,18"                                >
+            <Grid x:ConnectionId='6' Height="26" Margin="10,0,28,18"                                >
                 <TextBlock  Text="  +" FontSize="24" Height="26" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" />
             </Grid>
         </Grid>
         <Grid Name="SubtractGoals2" HorizontalAlignment="Left" Height="44" Margin="654,279,0,0" VerticalAlignment="Top" Width="88">
             <Image Source="Assets/AddPlayersPatch.png" Margin="-21,0,0,-10" />
-            <Grid x:ConnectionId='4' Height="26" Margin="10,0,28,18"                                     >
-                <TextBlock  Text="  -" FontSize="48" Height="55" Width="71" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="-14,-17,-7,-12" />
+            <Grid x:ConnectionId='5' Height="26" Margin="10,0,28,18"                                     >
+                <Image Source="Assets/minus.png" ></Image>
             </Grid>
         </Grid>
         <Grid Name="AddGoals1" HorizontalAlignment="Left" Height="44" Margin="3,246,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.5,0.5">
@@ -68,7 +68,7 @@
                 <CompositeTransform ScaleX="-1"/>
             </Grid.RenderTransform>
             <Image Source="Assets/AddPlayersPatch.png" Margin="-21,0,0,-10" />
-            <Grid x:ConnectionId='3' Height="26" Margin="10,0,28,18"                                >
+            <Grid x:ConnectionId='4' Height="26" Margin="10,0,28,18"                                >
                 <TextBlock  Text="  +" FontSize="24" Height="26" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" />
             </Grid>
         </Grid>
@@ -77,8 +77,8 @@
                 <CompositeTransform ScaleX="-1"/>
             </Grid.RenderTransform>
             <Image Source="Assets/AddPlayersPatch.png" Margin="-21,0,0,-10" />
-            <Grid x:ConnectionId='2' Height="26" Margin="10,0,28,18"                                     >
-                <TextBlock  Text="  -" FontSize="48" Height="55" Width="71" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="-14,-17,-7,-12" />
+            <Grid x:ConnectionId='3' Height="26" Margin="10,0,28,18"                                     >
+                <Image Source="Assets/minus.png" ></Image>
             </Grid>
         </Grid>
 
@@ -107,39 +107,26 @@
                     </DataTemplate>
                 </GridView.ItemTemplate>
             </GridView>-->
-            <Grid Margin="10,82,10,10">
-                <Grid.Resources>
-                    <Thickness x:Key="ColumnMargin">10,0,0,0</Thickness>
-                </Grid.Resources>
-
+            <!--<Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="Auto" MinWidth="10" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="50" />
                 </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" MinHeight="16" />
-                    <RowDefinition />
-                </Grid.RowDefinitions>
+                <ListView>
+                    <ListView.ItemsSource ItemsSource="{Binding bracket.Players}">
+                        <TextBlock Text="{Binding Position}" Grid.Column="0"/>
+                    </ListView.ItemsSource>
+                </ListView>          
+            </Grid>-->
 
-                <TextBlock Text="Id" Grid.ColumnSpan="2" Margin="0,0,-22,0"/>
-                <TextBlock Grid.Column="1" Margin="32,0,-152,0" Text="Pid" RenderTransformOrigin="2.938,0.571"/>
+            <ListView x:ConnectionId='2' x:Name="Leaderboard"                                       HorizontalAlignment="Left" Height="454" Margin="10,77,0,0" VerticalAlignment="Top" Width="583" Foreground="#FF00A2FF">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ListViewItem x:Name="lstGame" Margin="0" HorizontalAlignment="Center"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
-                <ItemsControl Grid.Row="1" ItemsSource="{Binding bracket.Players}" Grid.ColumnSpan="2" Margin="0,0,-17,0">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding Position}"/>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
-
-                <ItemsControl Grid.Column="1" Grid.Row="1" Margin="{StaticResource ColumnMargin}" ItemsSource="{Binding bracket.Players}">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding Club.name}"/>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
-            </Grid>
 
             <!-- LEADERBOARD ENDS RIGHT HERE RIGHT NOW-->
             
@@ -156,7 +143,7 @@
                 </TextBlock>
             </Grid>
         </Grid>
-        <Button x:ConnectionId='1' Content="Button"                       HorizontalAlignment="Left" Margin="932,80,0,0" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='1' Name="ButtonSwap" Content="Played Matches"                       HorizontalAlignment="Left" Margin="69,181,0,0" VerticalAlignment="Top" BorderBrush="#FF00A2FF" Height="42" Width="143"/>
 
 
 

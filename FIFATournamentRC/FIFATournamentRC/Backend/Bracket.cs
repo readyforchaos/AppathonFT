@@ -9,7 +9,6 @@ namespace Backend
     class Bracket
     {
         public List<Player> Players { get; set; }
-        //ObservableCollection<Player> players;
         
         public List<Match> Matches{ get; set; }
         public List<Match> MatchesPlayed { get; set; }
@@ -23,17 +22,12 @@ namespace Backend
             CurrentMatch = 0;
             Players = players;
             GenerateMatches();
-        }
-
-        void UpdatePlayerStats()
-        {
-
+            
         }
 
         void GenerateMatches()
         {
 
-            //Randomize List http://stackoverflow.com/questions/273313/randomize-a-listt-in-c-sharp
             for (int i = 1; i <= Players.Count; i++)
             {
                 MatchCount += (Players.Count() - i);

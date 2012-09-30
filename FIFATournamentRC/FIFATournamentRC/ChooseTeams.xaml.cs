@@ -69,13 +69,8 @@ namespace FIFATournamentRC
             }
         }
 
-        private void GoBack(object sender, RoutedEventArgs e)
+        private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-            foreach (Player p in App.Instance.Players)
-            {
-                
-            }
-
             App.Instance.Players.Clear();
 
             this.Frame.Navigate(typeof(MainPage));
@@ -87,12 +82,12 @@ namespace FIFATournamentRC
             {
                 Boolean matchFound = true;
 
-                club foo = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex];
+                club temp = App.Instance.Leagues[LeagueList.SelectedIndex].clubs[ClubList.SelectedIndex];
 
                 //Checks to see if club has been selected by a previous player
                 foreach (Player p in App.Instance.Players)
                 {
-                    if (foo == p.Club)
+                    if (temp == p.Club)
                     {
                         matchFound = false;
                     }
@@ -101,7 +96,7 @@ namespace FIFATournamentRC
                 //TODO: Add text if club has already been selected to alert the player
                 if (matchFound)
                 {
-                    App.Instance.Players[count].Club = foo;
+                    App.Instance.Players[count].Club = temp;
                     count++;
                     if (count < App.Instance.Players.Count)
                     {

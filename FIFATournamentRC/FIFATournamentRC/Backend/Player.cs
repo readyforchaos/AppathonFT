@@ -41,9 +41,25 @@ namespace Backend
 
         public override string ToString()
         {
+            string clubnameTemp = Club.name;
+            if (Club.name.Length > 10)
+            {
+                clubnameTemp = clubnameTemp.Substring(0, 9);
+                
+            }
 
-            return Club.name + " " + Position + " " + Played + " " + Wins + " " + Ties +
-                " " + Losses + " " + GoalsFor + " " + GoalsAgainst + " " + GoalDifference + " " + Points;
+            string nameTemp = Name;
+            if (Name.Length > 10)
+            {
+                nameTemp = nameTemp.Substring(0, 9);
+            }
+
+            return String.Format("{0,-10} {1}\t{2}\t{3,-10} {4,-10} {5,-10} {6,-10} {7,-10} {8,-10} {9,-10} {10,-10}",
+                Position, clubnameTemp, nameTemp, Played, Wins, Ties, Losses, 
+                GoalsFor, GoalsAgainst, GoalDifference, Points);
+
+            //return Club.name + " " + Position + " " + Played + " " + Wins + " " + Ties +
+              //  " " + Losses + " " + GoalsFor + " " + GoalsAgainst + " " + GoalDifference + " " + Points;
         }
 
     }

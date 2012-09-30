@@ -145,6 +145,7 @@
     <Content Include="Assets\half_str.png" />
     <Content Include="Assets\list.png" />
     <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\minus.png" />
     <Content Include="Assets\PentagonBackground.png" />
     <Content Include="Assets\placeholder.png" />
     <Content Include="Assets\SmallLogo.png" />

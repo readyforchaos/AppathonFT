@@ -30,7 +30,6 @@ namespace FIFATournamentRC
             this.InitializeComponent();
 
             PlayerList.ItemsSource = App.Instance.OCPlayers;
-            
         }
 
         /// <summary>
@@ -39,8 +38,7 @@ namespace FIFATournamentRC
         /// <param name="e">Event data that describes how this page was reached.  The Parameter
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            
+        {   
         }
 
         private void Continue(object sender, RoutedEventArgs e)
@@ -52,9 +50,14 @@ namespace FIFATournamentRC
                     App.Instance.Players.Add(p);
                 }
             }
-            if (App.Instance.Players.Count > 0)
+            if (App.Instance.Players.Count > 2)
             {
                 this.Frame.Navigate(typeof(ChooseTeams), null);
+            }
+            else
+            {
+                App.Instance.Players.Clear();
+              
             }
         }
 

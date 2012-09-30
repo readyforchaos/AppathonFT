@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -26,6 +27,7 @@ namespace FIFATournamentRC
 
         Bracket bracket;
         Boolean swapped;
+        Boolean finals;
 
         public Dashboard()
         {
@@ -33,6 +35,7 @@ namespace FIFATournamentRC
 
             this.InitializeComponent();
             swapped = false;
+            finals = false;
             GenerateMatchList();
             GenerateLeaderboard();
             
@@ -72,27 +75,18 @@ namespace FIFATournamentRC
                 MatchList.Items.Add(temp);
             }
 
-            /*foreach (Match m in bracket.Matches)
-            {
-                ListViewItem temp = new ListViewItem();
-                temp.Content = m.ToString();
-                MatchList.Items.Add(temp);
-            }*/
-            
         }
 
         void GenerateLeaderboard()
         {
-            bracket.Players.Sort(delegate(Player p1, Player p2) { return p2.Points.CompareTo(p1.Points); });
-
-            //Leaderboard.Items.Clear();
+            Leaderboard.Items.Clear();
             
 
             foreach (Player p in bracket.Players)
             {
                 ListViewItem temp = new ListViewItem();
                 temp.Content = p.ToString();
-                //Leaderboard.Items.Add(temp);
+                Leaderboard.Items.Add(temp);
             }
 
         }
@@ -198,8 +192,15 @@ namespace FIFATournamentRC
             bracket.Players[index2].GoalDifference =
                 bracket.Players[index2].GoalsFor - bracket.Players[index2].GoalsAgainst;
 
+            //Sorts out Position
+            bracket.Players.Sort(delegate(Player p1, Player p2) { return p2.Points.CompareTo(p1.Points); });
+            for (int i = 0; i < bracket.Players.Count; i++)
+            {
+                bracket.Players[i].Position = i + 1;
+            }
+
             //Reloads the Leaderboard
-            //GenerateLeaderboard();
+            GenerateLeaderboard();
         }
 
         void GenerateMatchesPlayed()
@@ -214,9 +215,27 @@ namespace FIFATournamentRC
             }
         }
 
-        private void btnMatch_Click(object sender, RoutedEventArgs e)
+        private async void btnMatch_Click(object sender, RoutedEventArgs e)
         {
-            
+            if (finals)
+            {
+                String winner;
+                if (bracket.Matches[0].Club1Goals > bracket.Matches[0].Club2Goals)
+                {
+                    winner = bracket.Matches[0].club1;
+                }
+                else { winner = bracket.Matches[1].club2; }
+
+                var md = new MessageDialog(winner + " won!");
+
+                md.Commands.Add(new UICommand("Exit", (UICommandInvokedHandler) =>
+                {
+                    App.Current.Exit();
+                }));
+                
+                await md.ShowAsync();
+            }
+
             if (bracket.CurrentMatch < bracket.MatchCount - 1 && !swapped)
             {
 
@@ -224,6 +243,40 @@ namespace FIFATournamentRC
                 MatchList.Items.RemoveAt(0);
 
                 bracket.CurrentMatch++;
+                if (bracket.CurrentMatch == bracket.MatchCount - 1)
+                {
+                    btn_Match.Content = "End match";
+                }
+
+            }
+            else if (MatchList.Items.Count > 0 && !swapped)
+            {
+                UpdatePlayerStats();
+                MatchList.Items.RemoveAt(0);
+                bracket.CurrentMatch++;
+                
+                //Final
+                List<Player> temp = new List<Player>();
+                temp.Add(bracket.Players[0]);
+                temp.Add(bracket.Players[1]);
+                if (bracket.Players[1].Points == bracket.Players[2].Points)
+                {
+                    temp.Add(bracket.Players[2]);
+                    if (temp[0].Points == temp[2].Points)
+                    {
+                        temp.Sort(delegate(Player p1, Player p2)
+                        { return p2.GoalDifference.CompareTo(p1.GoalDifference); });
+                    }
+                }
+                
+                bracket.Matches.Add(new Match(temp[0], temp[1]));
+                txbMatches.Text = "League final!";
+
+                ListViewItem lwi = new ListViewItem();
+                lwi.Content = bracket.Matches[0].ToString();
+                MatchList.Items.Clear();
+                MatchList.Items.Add(lwi);
+                finals = true;
 
             }
         }
@@ -235,13 +288,23 @@ namespace FIFATournamentRC
                 GenerateMatchesPlayed();
                 txbMatches.Text = "Played Matches";
                 swapped = true;
+                ButtonSwap.Content = "Current Matches";
             }
             else
             {
                 GenerateMatchList();
-                txbMatches.Text = "Matches";
+                if (!finals) { txbMatches.Text = "Matches"; }
+                else if (finals) { txbMatches.Text = "League final!"; }
+
                 swapped = false;
+                ButtonSwap.Content = "Played Matches";
             }
+        }
+
+        private void MatchList_Selected(object sender, SelectionChangedEventArgs e)
+        {
+            MatchList.SelectedIndex = -1;
+            Leaderboard.SelectedIndex = -1;
         }
     }
 }

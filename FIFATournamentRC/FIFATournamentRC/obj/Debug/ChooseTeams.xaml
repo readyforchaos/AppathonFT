@@ -27,7 +27,7 @@
 
         <Grid HorizontalAlignment="Left" Height="405" Margin="0,-5,0,0" VerticalAlignment="Top">
             <Image Source="Assets/PentagonBackground.png" Margin="0,-58,0,58" />
-            <Button x:ConnectionId='4' x:Name="backButton"                IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}" Margin="34,0,0,256"/>
+            <Button x:ConnectionId='4' x:Name="backButton"                       Style="{StaticResource BackButtonStyle}" Margin="34,0,0,256"/>
         </Grid>
         <Grid x:Name="GridHeader" HorizontalAlignment="Left" Height="135" Margin="120,0,0,0" VerticalAlignment="Top" Width="Auto">
             <TextBlock Margin="0,80,-1110,-24" Text="Team Selection" FontSize="56" FontFamily="Segoe UI" Foreground="#FF00A2FF" />

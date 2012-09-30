@@ -62,13 +62,29 @@ namespace Backend
         {
             //return "\t" + club1 + "\t" + Club1Goals.ToString() + "\t -\t" + Club2Goals.ToString() + "\t" + club2;
 
-            return String.Format("\t {0} {1} \t - \t {2} \t {3}", 
-                club1, club1Goals.ToString(), club2Goals.ToString(), club2); 
+            String club1temp = club1;
+            for (int i = club1.Length; i < 30; i++)
+            {
+                club1temp += " ";
+            }
+
+            String club2temp = null;
+            for (int i = club2.Length; i < 30; i++)
+            {
+                club2temp += " ";
+            }
+            //Add /t istedet for space
+            club2temp += club2;
+
+            return String.Format("{0} {1} \t - \t {2} {3}",
+                club1temp, club1Goals.ToString(), club2Goals.ToString(), club2temp); 
+
+           // return String.Format("\t {0} {1} \t - \t {2} \t {3}", 
+                //club1, club1Goals.ToString(), club2Goals.ToString(), club2); 
 
             //String cant be smaller then 2nd index of Substring parameter
             //Mulig fix, += X antall "space" for å få lengen på strengen innenfor parametere
         }
 
-        //Add override method Equals, for Bracket generating?
     }
 }
