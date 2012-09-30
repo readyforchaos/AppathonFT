@@ -60,8 +60,6 @@ namespace Backend
 
         public override String ToString()
         {
-            //return "\t" + club1 + "\t" + Club1Goals.ToString() + "\t -\t" + Club2Goals.ToString() + "\t" + club2;
-
             String club1temp = club1;
             for (int i = club1.Length; i < 30; i++)
             {

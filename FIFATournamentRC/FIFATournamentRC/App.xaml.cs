@@ -8,6 +8,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -43,15 +44,13 @@ namespace FIFATournamentRC
             this.Suspending += OnSuspending;
             Players = new List<Player>();
             OCPlayers = new ObservableCollection<Player>();
+            Leagues = new List<league>();
 
             OCPlayers.Add(new Player());
             OCPlayers.Add(new Player());
             OCPlayers.Add(new Player());
-            
-            if (NetworkInterface.GetIsNetworkAvailable())
-            {
-                GenerateLeague();
-            }
+
+            //CheckNetwork();
         }
 
         /// <summary>
@@ -115,6 +114,29 @@ namespace FIFATournamentRC
             {
                 league temp = ObjectSerializer.FromXML<league>("http://fifaapi.com/league/" + i + ".xml");
                 Leagues.Add(temp);
+            }
+        }
+
+        async void CheckNetwork()
+        {
+            if (NetworkInterface.GetIsNetworkAvailable())
+            {
+                GenerateLeague();
+            }
+            else
+            {
+                var md = new MessageDialog("No network connection found");
+                md.Commands.Add(new UICommand("Try again", (UICommandInvokedHandler) =>
+                {
+                    CheckNetwork();
+                }));
+
+                md.Commands.Add(new UICommand("Exit", (UICommandInvokedHandler) =>
+                {
+                    App.Current.Exit();
+                }));
+
+                await md.ShowAsync();
             }
         }
     }

@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Net.NetworkInformation;
 using System.Linq;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -30,6 +32,7 @@ namespace FIFATournamentRC
             this.InitializeComponent();
 
             PlayerList.ItemsSource = App.Instance.OCPlayers;
+            CheckNetwork();
         }
 
         /// <summary>
@@ -39,6 +42,34 @@ namespace FIFATournamentRC
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {   
+        }
+
+        void GenerateLeague()
+        {
+            for (int i = 1; i <= 32; i++)
+            {
+                league temp = ObjectSerializer.FromXML<league>("http://fifaapi.com/league/" + i + ".xml");
+                App.Instance.Leagues.Add(temp);
+            }
+        }
+
+        async void CheckNetwork()
+        {
+            if (NetworkInterface.GetIsNetworkAvailable())
+            {
+                GenerateLeague();
+            }
+            else
+            {
+                var md = new MessageDialog("No network connection found");
+
+                md.Commands.Add(new UICommand("Exit", (UICommandInvokedHandler) =>
+                {
+                    App.Current.Exit();
+                }));
+
+                await md.ShowAsync(); 
+            }
         }
 
         private void Continue(object sender, RoutedEventArgs e)

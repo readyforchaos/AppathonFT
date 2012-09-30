@@ -227,7 +227,7 @@ namespace FIFATournamentRC
                 }
                 else { winner = bracket.Matches[bracket.Matches.Count - 1].club2; }
 
-                var md = new MessageDialog(winner + " won!");
+                var md = new MessageDialog(winner + " are champions!");
 
                 md.Commands.Add(new UICommand("Exit", (UICommandInvokedHandler) =>
                 {

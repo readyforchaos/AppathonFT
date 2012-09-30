@@ -22,11 +22,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFATournamentRC\FIFATournamentRC\bin\Debug\FIFATournamentRC.exe">
       <PackagePath>FIFATournamentRC.exe</PackagePath>
-      <Modified>2012-09-30T18:39:34.896</Modified>
+      <Modified>2012-09-30T19:34:23.673</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFATournamentRC\FIFATournamentRC\bin\Debug\FIFATournamentRC.pdb">
       <PackagePath>FIFATournamentRC.pdb</PackagePath>
-      <Modified>2012-09-30T18:39:34.873</Modified>
+      <Modified>2012-09-30T19:34:23.650</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFATournamentRC\FIFATournamentRC\Assets\AddPlayersPatch.png">
       <PackagePath>Assets\AddPlayersPatch.png</PackagePath>
