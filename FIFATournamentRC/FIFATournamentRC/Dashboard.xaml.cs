@@ -220,11 +220,12 @@ namespace FIFATournamentRC
             if (finals)
             {
                 String winner;
-                if (bracket.Matches[0].Club1Goals > bracket.Matches[0].Club2Goals)
+                if (bracket.Matches[bracket.Matches.Count - 1].Club1Goals > 
+                    bracket.Matches[bracket.Matches.Count - 1].Club2Goals)
                 {
-                    winner = bracket.Matches[0].club1;
+                    winner = bracket.Matches[bracket.Matches.Count - 1].club1;
                 }
-                else { winner = bracket.Matches[1].club2; }
+                else { winner = bracket.Matches[bracket.Matches.Count - 1].club2; }
 
                 var md = new MessageDialog(winner + " won!");
 
@@ -273,7 +274,7 @@ namespace FIFATournamentRC
                 txbMatches.Text = "League final!";
 
                 ListViewItem lwi = new ListViewItem();
-                lwi.Content = bracket.Matches[0].ToString();
+                lwi.Content = bracket.Matches[bracket.Matches.Count - 1].ToString();
                 MatchList.Items.Clear();
                 MatchList.Items.Add(lwi);
                 finals = true;
@@ -292,9 +293,18 @@ namespace FIFATournamentRC
             }
             else
             {
-                GenerateMatchList();
-                if (!finals) { txbMatches.Text = "Matches"; }
-                else if (finals) { txbMatches.Text = "League final!"; }
+                if (!finals) 
+                { 
+                    GenerateMatchList(); 
+                    txbMatches.Text = "Matches"; }
+                else if (finals) 
+                { 
+                    txbMatches.Text = "League final!";
+                    ListViewItem lwi = new ListViewItem();
+                    lwi.Content = bracket.Matches[bracket.Matches.Count - 1].ToString();
+                    MatchList.Items.Clear();
+                    MatchList.Items.Add(lwi);
+                }
 
                 swapped = false;
                 ButtonSwap.Content = "Played Matches";
