@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="FIFATournamentRC.BufferPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FIFATournamentRC"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid HorizontalAlignment="Left" Height="405" Margin="0,-5,0,0" VerticalAlignment="Top">
+            <Image Source="Assets/PentagonBackground.png" Margin="0,-58,0,58" />
+            <TextBlock Name="tb" HorizontalAlignment="Left" Margin="160,276,0,0" TextWrapping="Wrap" Text="Generating leagues might take a few seconds" VerticalAlignment="Top" FontStyle="Italic" FontSize="18" Foreground="#FFA4A4A4"/>
+        </Grid>
+        <Grid x:Name="GridHeader" HorizontalAlignment="Left" Height="135" Margin="120,0,0,0" VerticalAlignment="Top" Width="Auto">
+            <TextBlock Margin="0,80,-1110,-24" Text="Football Tournament" FontSize="56" FontFamily="Segoe UI" Foreground="#FF00A2FF" />
+        </Grid>
+        <Button x:ConnectionId='1'                           Content="Press to generate Leagues" HorizontalAlignment="Left" Margin="226,301,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
+

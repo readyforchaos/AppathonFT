@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ALIENWARE</Machine>
+    <WindowsUser>Andy</WindowsUser>
+    <SolutionConfiguration>Football Tournament RC|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\FIFATournamentRC.exe">
+      <PackagePath>FIFATournamentRC.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\FIFATournamentRC.pdb">
+      <PackagePath>FIFATournamentRC.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\AddPlayersPatch.png">
+      <PackagePath>Assets\AddPlayersPatch.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\BadgeLogo.png">
+      <PackagePath>Assets\BadgeLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\bgMannen.png">
+      <PackagePath>Assets\bgMannen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\bgPokalen.png">
+      <PackagePath>Assets\bgPokalen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\half_str.png">
+      <PackagePath>Assets\half_str.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\list.png">
+      <PackagePath>Assets\list.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\minus.png">
+      <PackagePath>Assets\minus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\PentagonBackground.png">
+      <PackagePath>Assets\PentagonBackground.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\placeholder.png">
+      <PackagePath>Assets\placeholder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\star.png">
+      <PackagePath>Assets\star.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\starEmpty.png">
+      <PackagePath>Assets\starEmpty.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\BufferPage.xaml">
+      <PackagePath>BufferPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\ChooseTeams.xaml">
+      <PackagePath>ChooseTeams.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\Dashboard.xaml">
+      <PackagePath>Dashboard.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

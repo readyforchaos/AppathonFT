@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SINDRE-PC</Machine>
+    <WindowsUser>Sindre</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\bin\Debug\FIFATournamentRC.exe">
+      <PackagePath>FIFATournamentRC.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\bin\Debug\FIFATournamentRC.pdb">
+      <PackagePath>FIFATournamentRC.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\Assets\AddPlayersPatch.png">
+      <PackagePath>Assets\AddPlayersPatch.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\Assets\BadgeLogo.png">
+      <PackagePath>Assets\BadgeLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\Assets\bgMannen.png">
+      <PackagePath>Assets\bgMannen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\Assets\bgPokalen.png">
+      <PackagePath>Assets\bgPokalen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\Assets\half_str.png">
+      <PackagePath>Assets\half_str.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\Assets\list.png">
+      <PackagePath>Assets\list.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\Assets\minus.png">
+      <PackagePath>Assets\minus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\Assets\PentagonBackground.png">
+      <PackagePath>Assets\PentagonBackground.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\Assets\placeholder.png">
+      <PackagePath>Assets\placeholder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\Assets\star.png">
+      <PackagePath>Assets\star.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\Assets\starEmpty.png">
+      <PackagePath>Assets\starEmpty.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\bin\Debug\AboutUserControl.xaml">
+      <PackagePath>AboutUserControl.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\bin\Debug\BufferPage.xaml">
+      <PackagePath>BufferPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\bin\Debug\ChooseTeams.xaml">
+      <PackagePath>ChooseTeams.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\bin\Debug\Dashboard.xaml">
+      <PackagePath>Dashboard.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\bin\Debug\PrivacyUserControl.xaml">
+      <PackagePath>PrivacyUserControl.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sindre\Documents\Visual Studio 2012\Projects\FIFARC NEW VERSION FOR SIDNRE\FIFATournamentRC\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

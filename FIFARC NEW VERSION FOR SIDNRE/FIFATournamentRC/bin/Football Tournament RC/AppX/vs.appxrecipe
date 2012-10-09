@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ALIENWARE</Machine>
+    <WindowsUser>Andy</WindowsUser>
+    <SolutionConfiguration>Football Tournament RC|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>98EA528456A7A6F903E568DC5C92B7B32FAAA10DDCA10D66B98C429FA1609F26</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>55d0babb-aa68-443c-84f3-c6e1981fb93a_1.0.0.0_neutral__nsf9e2fmhb1sj</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>55d0babb-aa68-443c-84f3-c6e1981fb93a_nsf9e2fmhb1sj!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>55d0babb-aa68-443c-84f3-c6e1981fb93a</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Andy</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-09-30T21:04:55.528</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\FIFATournamentRC.exe">
+      <PackagePath>FIFATournamentRC.exe</PackagePath>
+      <Modified>2012-09-30T21:04:55.411</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\FIFATournamentRC.pdb">
+      <PackagePath>FIFATournamentRC.pdb</PackagePath>
+      <Modified>2012-09-30T21:04:55.388</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\AddPlayersPatch.png">
+      <PackagePath>Assets\AddPlayersPatch.png</PackagePath>
+      <Modified>2012-09-30T18:41:41.390</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\BadgeLogo.png">
+      <PackagePath>Assets\BadgeLogo.png</PackagePath>
+      <Modified>2012-09-30T18:41:41.391</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\bgMannen.png">
+      <PackagePath>Assets\bgMannen.png</PackagePath>
+      <Modified>2012-09-30T18:41:41.396</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\bgPokalen.png">
+      <PackagePath>Assets\bgPokalen.png</PackagePath>
+      <Modified>2012-09-30T18:41:41.397</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\half_str.png">
+      <PackagePath>Assets\half_str.png</PackagePath>
+      <Modified>2012-09-30T18:41:41.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\list.png">
+      <PackagePath>Assets\list.png</PackagePath>
+      <Modified>2012-09-30T18:41:41.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-09-30T18:41:41.392</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\minus.png">
+      <PackagePath>Assets\minus.png</PackagePath>
+      <Modified>2012-09-30T18:41:41.399</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\PentagonBackground.png">
+      <PackagePath>Assets\PentagonBackground.png</PackagePath>
+      <Modified>2012-09-30T18:41:41.393</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\placeholder.png">
+      <PackagePath>Assets\placeholder.png</PackagePath>
+      <Modified>2012-09-30T19:02:57.743</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-09-30T18:41:41.394</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-09-30T19:06:55.581</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\star.png">
+      <PackagePath>Assets\star.png</PackagePath>
+      <Modified>2012-09-30T18:41:41.400</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\starEmpty.png">
+      <PackagePath>Assets\starEmpty.png</PackagePath>
+      <Modified>2012-09-30T18:41:41.401</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-09-30T18:41:41.395</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-09-30T18:58:36.719</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2012-09-30T18:41:41.389</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\BufferPage.xaml">
+      <PackagePath>BufferPage.xaml</PackagePath>
+      <Modified>2012-09-30T21:04:02.485</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\ChooseTeams.xaml">
+      <PackagePath>ChooseTeams.xaml</PackagePath>
+      <Modified>2012-09-30T18:41:41.405</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-09-30T18:41:41.426</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\Dashboard.xaml">
+      <PackagePath>Dashboard.xaml</PackagePath>
+      <Modified>2012-09-30T19:56:12.226</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2012-09-30T20:38:08.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Andy\Desktop\FIFATournamentRC\FIFATournamentRC\bin\Football Tournament RC\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2012-09-30T21:04:55.473</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

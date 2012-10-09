@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="14863AndersGillMarkusNyla.FootballTournament" Publisher="CN=FE6B1FFE-E9EC-4329-863C-38BFD51C9179" Version="1.0.0.4" />
+  <Properties>
+    <DisplayName>Football Tournament</DisplayName>
+    <PublisherDisplayName>Anders Gill, Markus Nyland &amp; Sindre Stenland</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="FIFATournamentRC.App">
+      <VisualElements DisplayName="Football Tournament" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Football tournament  generator" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" WideLogo="Assets\WideLogo.png" ShortName="Football Tournament" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#1d1d1d" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
